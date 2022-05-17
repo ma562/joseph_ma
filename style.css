@@ -159,7 +159,7 @@
 
 /*about*/
 section{
-	padding:  100px 0;
+	padding:  65px 0;
 }
 .about{
 	font-family: 'Poppins', sans-serif;
@@ -208,6 +208,7 @@ section{
 }
 
 /*course work and skills*/
+
 .course {
 	font-family: 'Poppins', sans-serif;
 	min-height: 500px;
