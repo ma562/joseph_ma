@@ -328,7 +328,20 @@ section{
 	}
 	.about .about-content .right{
 		flex: 100%;
+	}
 
+	.course .course-content .column{
+		width: 100%;
+	}
+
+	.course .course-content .left{
+		/*display: flex;*/
+		justify-content: center;
+		margin: 0 auto 100px;
+	}
+	.course .course-content .right{
+		flex: 100%;
+		width: 20%;
 	}
 }
 
