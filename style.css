@@ -217,9 +217,15 @@ section{
 	/*background: #18191a;*/
 }
 
-ul {
-	display: inline-block;
+.course .course-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
 
+.course .course-content .left {
+	width: 50%;
 }
 
 .course .course-content .left .text{
@@ -228,6 +234,21 @@ ul {
 	margin-bottom: 10px;
 }
 
+.course .course-content .right{
+	width: 30%;
+	font-size: 25px;
+
+}
+
+.course .course-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.course .course-content .right img{
+	height: 25px;
+}
 
 /*mobile version*/
 @media (max-width: 1300px) {
