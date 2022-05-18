@@ -260,9 +260,7 @@ section{
 .projects {
 	color: #e3e3e3;
 	background: #111;
-	/*background: #ffcb05;*/
 }
-
 
 .projects .carousel .card{
 	color: #00274c;
@@ -308,6 +306,26 @@ section{
 
 .projects .carousel .card:hover img{
 	border-color: #000;
+}
+
+.owl-dots{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.owl-dot{
+	height: 13px;
+	width: 13px;
+	margin: 0 5px;
+	outline: none!important;
+	border-radius: 50%;
+	border: 2px solid #e3e3e3!important;
+	transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+	background: #e3e3e3!important;
 }
 
 /*mobile version*/
