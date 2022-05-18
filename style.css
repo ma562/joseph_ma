@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pacifico&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -263,16 +265,18 @@ section{
 }
 
 .projects .carousel .card{
+	font-family: 'Odibee Sans', cursive;
 	color: #00274c;
 	background: #e3e3e3;
 	border-radius: 6px;
-	padding: 25px 35px;
+	padding: 20px 35px;
 	text-align: center;
 	overflow: hidden;
 	transistion: all 0.3s ease;
 }
 
 .projects .carousel .card:hover{
+	cursor: pointer;
 	background: #ffcb05;
 	color: #111;
 }
@@ -290,14 +294,14 @@ section{
 }
 
 .projects .carousel .card .text{
-	font-size: 25px;
+	font-size: 40px;
 	font-weight: 500;
 	margin: 10px 0 7px 0;
 }
 
 .projects .carousel .card img{
-	height: 150px;
-	width: 150px;
+	height: 300px;
+	width: 300px;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 5px solid #111;
