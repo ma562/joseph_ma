@@ -300,8 +300,8 @@ section{
 }
 
 .projects .carousel .card img{
-	height: 300px;
-	width: 300px;
+	height: 270px;
+	width: 270px;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 5px solid #111;
