@@ -104,8 +104,6 @@
 .home{
 	display: flex;
 	background: transparent;
-	/*background: transparent;*/
-	/*background: url("blacked.jpeg") no-repeat center;*/
 	height: 100vh;
 	color: #fff;
 	min-height: 500px;
@@ -119,7 +117,6 @@
 
 .home .home-content .text-1 {
 	font-size: 27px;
-	/*-webkit-text-stroke: 1px black;*/
 }
 
 .home .home-content .text-2 {
