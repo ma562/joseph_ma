@@ -162,7 +162,6 @@ section{
 }
 .about, .projects{
 	font-family: 'Poppins', sans-serif;
-/*	background: black;*/
 	min-height: 500px;
 	color: #00274c;
 }
@@ -267,7 +266,7 @@ section{
 	font-family: 'Odibee Sans', cursive;
 	color: #00274c;
 	background: #e3e3e3;
-	opacity: 0.8;
+	opacity: 0.85;
 	border-radius: 6px;
 	padding: 20px 35px;
 	text-align: center;
@@ -331,6 +330,29 @@ section{
 .owl-dot.active,
 .owl-dot:hover{
 	background: white!important;
+}
+
+/*contact */
+.info {
+	/*background: linear-gradient(#090f0b, #);*/
+	background: #090f0b;
+/*	background: green;*/
+	/*background: #e3e3e3;*/
+/*	background: url("prexels.jpg") center;
+background-size: cover;*/
+	/*s*/
+	min-height: 25px;
+}
+
+.info .text{
+	font-family: 'Poppins', sans-serif;
+	color: #c2d9b6;
+	/*background: linear-gradient(#090f0b, #ffcb05);*/
+/*	background: #ffcb05;*/
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	/*text-align: center;*/
 }
 
 /*mobile version*/
