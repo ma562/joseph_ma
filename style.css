@@ -24,7 +24,7 @@
 	overflow: hidden;
 	/*background-color: #2c3142;*/
 	/*background-color: black;*/
-	background-color: #090f0b;
+	background-color: #000e0a;
 	/*background-color: #0b0f0f;*/
 	display: block;
 	height:100vs;
@@ -258,7 +258,7 @@ section{
 }
 
 .projects {
-	color: #c2d9b6;
+	color: #aeb78d;
 	background: url("glow stark.png") center;
 	background-size: cover;
 }
@@ -336,7 +336,7 @@ section{
 /*contact */
 .info {
 	/*background: linear-gradient(#090f0b, #);*/
-	background: #090f0b;
+	background: #000e0a;
 /*	background: green;*/
 	/*background: #e3e3e3;*/
 /*	background: url("prexels.jpg") center;
@@ -347,7 +347,7 @@ background-size: cover;*/
 
 .info .text{
 	font-family: 'Poppins', sans-serif;
-	color: #c2d9b6;
+	color: #aeb78d;
 	/*background: linear-gradient(#090f0b, #ffcb05);*/
 /*	background: #ffcb05;*/
 	font-size: 15px;
