@@ -103,7 +103,7 @@
 /*home*/
 .home{
 	display: flex;
-	background: black;
+	background: #090f0b;
 	height: 100vh;
 	color: #fff;
 	min-height: 500px;
@@ -266,7 +266,7 @@ section{
 	font-family: 'Odibee Sans', cursive;
 	color: #00274c;
 	background: #e3e3e3;
-	opacity: 0.85;
+	opacity: 0.93;
 	border-radius: 6px;
 	padding: 20px 35px;
 	text-align: center;
