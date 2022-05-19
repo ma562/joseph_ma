@@ -103,7 +103,7 @@
 /*home*/
 .home{
 	display: flex;
-	background: transparent;
+	background: black;
 	height: 100vh;
 	color: #fff;
 	min-height: 500px;
@@ -254,17 +254,20 @@ section{
 	font-weight: 600;
 	margin-bottom: 10px;
 	text-align: center;
+
 }
 
 .projects {
-	color: #e3e3e3;
-	background: #111;
+	color: #c2d9b6;
+	background: url("glow stark.png") center;
+	background-size: cover;
 }
 
 .projects .carousel .card{
 	font-family: 'Odibee Sans', cursive;
 	color: #00274c;
 	background: #e3e3e3;
+	opacity: 0.8;
 	border-radius: 6px;
 	padding: 20px 35px;
 	text-align: center;
@@ -275,6 +278,7 @@ section{
 .projects .carousel .card:hover{
 	cursor: pointer;
 	background: #ffcb05;
+	opacity: 1.0;
 	color: #111;
 }
 
@@ -297,8 +301,8 @@ section{
 }
 
 .projects .carousel .card img{
-	height: 270px;
-	width: 270px;
+	height: 380px;
+	width: 350px;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 5px solid #111;
@@ -320,13 +324,13 @@ section{
 	margin: 0 5px;
 	outline: none!important;
 	border-radius: 50%;
-	border: 2px solid #e3e3e3!important;
+	border: 2px solid white!important;
 	transition: all 0.3s ease;
 }
 
 .owl-dot.active,
 .owl-dot:hover{
-	background: #e3e3e3!important;
+	background: white!important;
 }
 
 /*mobile version*/
