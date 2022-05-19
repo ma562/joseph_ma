@@ -380,12 +380,13 @@ section{
 		margin: 20px 0;
 		font-size: 25px;
 	}
+	.home .home-content .text-1 {
+		font-size: 32px;
+	}
 
 	.home .home-content .text-2 {
 		font-size: 70px;
-
 	}
-
 	.home .home-content .text-3 {
 		font-size: 35px;
 	}
@@ -428,6 +429,9 @@ section{
 	.max-width{
 		padding: 0 23px;
 	}
+	.home .home-content .text-1 {
+		font-size: 27px;
+	}
 	.home .home-content .text-2 {
 		font-size: 60px;
 	}
@@ -442,7 +446,9 @@ section{
 }
 
 @media (max-width: 500px) {
-
+	.home .home-content .text-1 {
+		font-size: 23px;
+	}
 	.home .home-content .text-2 {
 		font-size: 50px;
 	}
