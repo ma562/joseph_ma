@@ -328,11 +328,12 @@ a, a:visited {
 }
 
 .projects .carousel .card .text{
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
 	/*margin: 10px 0 7px 0;*/
 }
+
 
 .projects .carousel .card img{
 	height: 300px;
