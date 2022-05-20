@@ -206,6 +206,26 @@ section{
 	text-align: justify;
 }
 
+.icon-box{
+	display: flex;
+	flex-direction: row;
+}
+
+.icons {
+	font-size: 40px;
+	width: 60px;
+	text-align: center;
+	text-vertical-align: middle;
+	height: 60px;
+	background-color: white;
+	/*border-radius: 10px;*/
+	margin: 20px 0px;
+}
+
+.icons:hover{
+	cursor: pointer;
+	color: green;
+}
 /*course work and skills*/
 
 .course {
@@ -295,9 +315,9 @@ section{
 }
 
 .projects .carousel .card .text{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 500;
-	margin: 10px 0 7px 0;
+	/*margin: 10px 0 7px 0;*/
 }
 
 .projects .carousel .card img{
