@@ -18,6 +18,14 @@ $(document).ready(function(){
 		$('.menu-btn i').toggleClass("active");
 	})
 
+	//typing script
+	//repeating
+	var typed = new Typed(".typing", {
+		strings: ["sloth", "sid", "the goodest"],
+		typeSpeed: 100,
+		backSpeed: 60,
+		loop: true
+	});
 
 	//owl carousel
 	$('.carousel').owlCarousel({
