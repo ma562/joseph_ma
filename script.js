@@ -19,9 +19,8 @@ $(document).ready(function(){
 	})
 
 	//typing script
-	//repeating
 	var typed = new Typed(".typing", {
-		strings: ["sloth", "sid", "the goodest"],
+		strings: ["a Computer Engineer", "an Electrical Engineer", "a Programmer", "a Robotics Enthusiast", "a Pythonista", "a Boilermaker"],
 		typeSpeed: 100,
 		backSpeed: 60,
 		loop: true
