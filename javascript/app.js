@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "binary.png",
+          "src": "images/binary.png",
           "height": 1000,
           "width": 1000
         }
