@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	$(window).scroll(function()	{
 		if(this.scrollY > 20)	{
-			console.log("scrolled");
 			$('.navbar').addClass("sticky");
 		}else{
 			$('.navbar').removeClass("sticky");
@@ -9,13 +8,21 @@ $(document).ready(function(){
 	});
 	// toggle menu/navbar
 	$('.menu-btn').click(function(){
+		console.log("clicked");
 		$('.navbar .menu').toggleClass("active");
 		$('.menu-btn i').toggleClass("active");
+		if(document.body.classList.contains("stop-scrolling")){
+			document.body.classList.remove("stop-scrolling");
+		}
+		else{
+			document.body.classList.add("stop-scrolling");
+		}
 	});
 
 	$('.navbar .menu li a').click(function(){
 		$('.navbar .menu').toggleClass("active");
 		$('.menu-btn i').toggleClass("active");
+		document.body.classList.remove("stop-scrolling");
 	})
 
 	//typing script
