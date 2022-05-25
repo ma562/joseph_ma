@@ -8,7 +8,6 @@ $(document).ready(function(){
 	});
 	// toggle menu/navbar
 	$('.menu-btn').click(function(){
-		console.log("clicked");
 		$('.navbar .menu').toggleClass("active");
 		$('.menu-btn i').toggleClass("active");
 		if(document.body.classList.contains("stop-scrolling")){
