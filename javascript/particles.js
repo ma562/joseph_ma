@@ -7,6 +7,11 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
+let id = document.getElementById("particles-js")
+id.style.backgroundImage = "url('images/glow_stark5.png')"
+id.style.backgroundSize = "cover";
+id.style.backgroundRepeat = "no-repeat"
+
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
