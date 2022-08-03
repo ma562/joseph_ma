@@ -105,7 +105,8 @@
 
 /*home*/
 .home{
-	background: green;
+	background-color: #000e0a;
+	transition: 1s;
 	display: flex;
 	height: 100vh;
 	color: #fff;
