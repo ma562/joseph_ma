@@ -27,11 +27,13 @@
 	height: 100vh;
 	overflow: hidden;
 	/*background-color: #000e0a;*/
+	background-color: transparent;
+	/*transition: background 0.5s ease;*/
 	/*background: url("images/glow_stark5.png") center;*/
 	/*background: url("images/stark8.png") center;*/
-	background: center;
+/*	background: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	display: block;
 	height:100vs;
 }
@@ -103,6 +105,7 @@
 
 /*home*/
 .home{
+	background: green;
 	display: flex;
 	height: 100vh;
 	color: #fff;
