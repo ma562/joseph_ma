@@ -7,7 +7,7 @@ if (pick == 0){
 	id.style.backgroundImage = "url('images/glow_stark5.png')"
 }
 else{
-	id.style.backgroundImage = "url('images/back2.png')"
+	id.style.backgroundImage = "url('images/back3.png')"
 }
 
 
