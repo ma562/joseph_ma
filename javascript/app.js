@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 10,
+        "value": 6,
         "density": {
           "enable": true,
           "value_area": 800
@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "images/binary_art.png",
+          "src": "images/binary_art_2.png",
           "height": 1000,
           "width": 1000
         }
