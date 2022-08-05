@@ -1,5 +1,6 @@
 pick = Math.floor(Math.random() * 2)
 console.log(pick)
+console.log(screen.width)
 
 let id = document.getElementById("home")
 
@@ -8,6 +9,10 @@ if (pick == 0){
 }
 else{
 	id.style.backgroundImage = "url('images/back10.png')"
+}
+
+if (screen.width < 947) {
+	id.style.backgroundImage = "url('images/back2.png')"
 }
 
 
