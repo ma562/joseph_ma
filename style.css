@@ -379,6 +379,15 @@ a, a:visited {
 
 /*mobile version*/
 @media (max-width: 1300px) {
+	.home {
+
+		/*CHANGE HERE*/
+		background-position: center bottom;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
 	.home .max-width{
 		margin-left: 0px;
 	}

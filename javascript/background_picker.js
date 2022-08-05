@@ -11,10 +11,13 @@ else{
 	id.style.backgroundImage = "url('images/back10.png')"
 }
 
-if (screen.width < 947) {
+if (screen.width < 1300) {
 	id.style.backgroundImage = "url('images/mobile1.png')"
 }
+else {
 
-
+}
 id.style.backgroundSize = "cover";
 id.style.backgroundRepeat = "no-repeat"
+
+
