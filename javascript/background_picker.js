@@ -12,7 +12,7 @@ else{
 }
 
 if (screen.width < 947) {
-	id.style.backgroundImage = "url('images/back2.png')"
+	id.style.backgroundImage = "url('images/mobile1.png')"
 }
 
 
