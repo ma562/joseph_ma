@@ -8,7 +8,7 @@ if (pick == 0){
 	id.style.backgroundImage = "url('images/glow_stark5.png')"
 }
 else{
-	id.style.backgroundImage = "url('images/back11.png')"
+	id.style.backgroundImage = "url('images/back12.png')"
 }
 
 if (screen.width < 1300) {
