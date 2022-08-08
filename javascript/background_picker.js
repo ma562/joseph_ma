@@ -5,7 +5,7 @@ console.log(screen.width)
 let id = document.getElementById("home")
 
 if (pick == 0){
-	id.style.backgroundImage = "url('images/back2.png')"
+	id.style.backgroundImage = "url('backgrounds/background_2.png')"
 }
 else{
 	id.style.backgroundImage = "url('backgrounds/background_1.png')"
