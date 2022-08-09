@@ -8,12 +8,12 @@ if (pick == 0){
 	id.style.backgroundImage = "url('backgrounds/background_2.png')"
 }
 else{
-	id.style.backgroundImage = "url('backgrounds/background_1.png')"
+	id.style.backgroundImage = "url('backgrounds/background_3.png')"
 }
 
 if (screen.width < 1300) {
 	if (pick == 0) {
-		id.style.backgroundImage = "url('mobile_backgrounds/mobile_background_1.png')"
+		id.style.backgroundImage = "url('mobile_backgrounds/mobile_background_3.png')"
 	}
 	else {
 		id.style.backgroundImage = "url('mobile_backgrounds/mobile_background_2.png')"
