@@ -1,4 +1,4 @@
-NUM_BACKGROUNDS = 4
+NUM_BACKGROUNDS = 8
 pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
 console.log(pick)
 console.log(screen.width)
