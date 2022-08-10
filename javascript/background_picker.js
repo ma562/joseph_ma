@@ -1,23 +1,21 @@
-pick = Math.floor(Math.random() * 2)
+NUM_BACKGROUNDS = 4
+pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
 console.log(pick)
 console.log(screen.width)
 
 let id = document.getElementById("home")
 
-if (pick == 0){
-	id.style.backgroundImage = "url('backgrounds/background_2.png')"
-}
-else{
-	id.style.backgroundImage = "url('backgrounds/background_3.png')"
-}
 
-if (screen.width < 1300) {
-	if (pick == 0) {
-		id.style.backgroundImage = "url('mobile_backgrounds/mobile_background_3.png')"
-	}
-	else {
-		id.style.backgroundImage = "url('mobile_backgrounds/mobile_background_2.png')"
-	}
+if (screen.width >= 1300) {
+
+	bkground = "url('backgrounds/background_" + String(pick) + ".png')"
+	id.style.backgroundImage = bkground
+
+
+}
+else {
+	bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
+	id.style.backgroundImage = bkground
 }
 
 id.style.backgroundSize = "cover";
