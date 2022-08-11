@@ -1,7 +1,6 @@
-NUM_BACKGROUNDS = 8
+NUM_BACKGROUNDS = 12
 pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
-console.log(pick)
-console.log(screen.width)
+
 
 let id = document.getElementById("home")
 
