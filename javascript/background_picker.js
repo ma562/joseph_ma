@@ -1,4 +1,4 @@
-NUM_BACKGROUNDS = 16
+NUM_BACKGROUNDS = 20
 pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
 
 
