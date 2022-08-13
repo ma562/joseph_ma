@@ -1,4 +1,4 @@
-NUM_BACKGROUNDS = 20
+NUM_BACKGROUNDS = 24
 pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
 
 
@@ -7,7 +7,7 @@ let id = document.getElementById("home")
 
 if (screen.width >= 1300) {
 
-	bkground = "url('backgrounds/background_" + String(pick) + ".png')"
+	bkground = "url('backgrounds/background_" + String(24) + ".png')"
 	id.style.backgroundImage = bkground
 
 
