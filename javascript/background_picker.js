@@ -7,7 +7,7 @@ let id = document.getElementById("home")
 
 if (screen.width >= 1300) {
 
-	bkground = "url('backgrounds/background_" + String(24) + ".png')"
+	bkground = "url('backgrounds/background_" + String(pick) + ".png')"
 	id.style.backgroundImage = bkground
 
 
