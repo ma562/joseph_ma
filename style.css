@@ -302,7 +302,7 @@ a, a:visited {
 	overflow: hidden;
 	transistion: all 0.3s ease;
 	text-align: justify;
-	height: 650px;			/*changed*/
+	/*height: 650px;			/*changed*/*/
 }
 
 .projects .carousel .card:hover{
