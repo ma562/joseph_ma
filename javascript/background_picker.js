@@ -1,4 +1,4 @@
-NUM_BACKGROUNDS = 24
+NUM_BACKGROUNDS = 28
 pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
 
 
@@ -9,8 +9,6 @@ if (screen.width >= 1300) {
 
 	bkground = "url('backgrounds/background_" + String(pick) + ".png')"
 	id.style.backgroundImage = bkground
-
-
 }
 else {
 	bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
