@@ -396,6 +396,7 @@ a, a:visited {
 @media (max-width: 1104px) {
 	.projects .carousel .card {
 		height: 700px;
+		font-size: 15px;
 	}
 
 
