@@ -16,7 +16,7 @@ if (screen.width >= 1300) {
   size_val = 45;
 }
 else {
-  size_val = 100;
+  size_val = 120;
 }
 
 particlesJS('particles-js',
