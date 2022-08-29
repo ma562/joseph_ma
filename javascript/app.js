@@ -11,6 +11,14 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
+
+if (screen.width >= 1300) {
+  size_val = 45;
+}
+else {
+  size_val = 100;
+}
+
 particlesJS('particles-js',
   
   {
@@ -51,7 +59,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 45,
+        "value": size_val,
         "random": false,
         "anim": {
           "enable": false,
