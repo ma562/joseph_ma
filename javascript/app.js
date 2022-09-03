@@ -15,8 +15,11 @@ particlesJS.load('particles-js', 'particles.json', function() {
 if (screen.width >= 1300) {
   size_val = 45;
 }
+else if (screen.width >= 900) {
+  size_val = 34;
+}
 else {
-  size_val = 150;
+  size_val = 28;
 }
 
 particlesJS('particles-js',
