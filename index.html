@@ -23,6 +23,28 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#projects">Projects</a></li>
+				<li><a href="#">Memories</a>
+					<div class = "memories">
+						<div class = "mems">
+							<ul>
+								<li id = "summer22"><a href = "https://joseph-ma.com/">Summer 22'</a></li><br>
+								<li id = "fall22"><a href = "https://joseph-ma.com/">Fall 22'</a></li>
+							</ul>
+						</div>
+						<script>
+							//MEMORY SELECTOR
+							const my_memories = ["summer22", "fall22"]
+							const memory_list = new Array(my_memories.length)
+
+							for(let i = 0; i < my_memories.length; i++) {
+								memory_list[i] = document.querySelector("#" + my_memories[i]);
+							    memory_list[i].addEventListener("click", (event) => {
+							      localStorage.setItem("my__background", my_memories[i])
+							    });
+							}
+						</script>
+					</div>
+				</li>
 			</ul>
 			<div class ="menu-btn">
 				<i class="fa-solid fa-bars"></i>

@@ -74,6 +74,8 @@
 
 .navbar .menu li a{
 	color: #fff;
+
+	/*lets fix this*/
 	font-size: 18px;
 	font-weight: 500;
 	margin-left: 25px;
@@ -266,9 +268,51 @@ a, a:visited {
 	height: 25px;
 }
 
+/*Memories*/
+.memories {
+	line-height: 25px;
+	display: none;
+}
+
+.navbar .menu .memories li a{
+	/*font-color: green;*/
+	display: block;
+	font-size: 15px;
+	font-color: black;
+}
+
+
+.navbar .max-width ul li:hover .memories {
+	display: block;
+	border-radius: 5px;
+	position: absolute;
+	/*opacity: 95%;*/
+	background: #00274C;
+	margin-top: 0px;
+	margin-left: 15px;
+	z-index: 200;
+}
+
+.navbar .max-width ul li:hover .memories ul{
+	display: block;
+	margin: 10px;
+}
+
+.navbar ul li:hover .memories ul li{
+	width: 150px;
+	padding: 10px 10px;
+	border-bottom: thick double white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navbar ul li:hover .memories ul li:last-child{
+	border-bottom: none;
+}
+
 /*projects*/
 .projects .text{
-	/*font-family: 'Grape Nuts', cursive;*/
 	font-family: 'Orbitron', sans-serif;
 	font-size: 40px;
 	font-weight: 600;
@@ -381,7 +425,6 @@ a, a:visited {
 		background-repeat: no-repeat;
 	}
 
-
 	.home .max-width{
 		margin-left: 0px;
 	}
@@ -437,6 +480,7 @@ a, a:visited {
 		font-size: 30px;
 		font-weight: 500;
 	}
+
 	.home .home-content .text-1 {
 		font-size: 32px;
 	}
