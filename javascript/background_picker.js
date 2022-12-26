@@ -23,7 +23,7 @@ if(my_background == null) {
 }
 else {
 	//memories background selector
-	bkground = "url('images/wordle.png')"
+	bkground = "url('images/glow_stark5.png')"
 	id.style.backgroundImage = bkground
 }
 
