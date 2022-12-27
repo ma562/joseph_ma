@@ -1,4 +1,4 @@
-//alert("Joseph's currently working on a memories section of his website. It's not working at the moment but will be up by the beginning of 2023. Click Ok to continue to site.")
+alert("Website is currently under maintenance - theme and memories section work in progress.")
 
 const my_background = localStorage.getItem('my__background');
 
