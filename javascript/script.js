@@ -18,7 +18,10 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.navbar .menu li a').click(function(){
+
+
+	// $('.navbar .menu li a').click(function(){
+	$('.original_button').click(function(){
 		$('.navbar .menu').toggleClass("active");
 		$('.menu-btn i').toggleClass("active");
 		document.body.classList.remove("stop-scrolling");

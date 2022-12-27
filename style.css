@@ -555,17 +555,21 @@ a, a:visited {
 	}
 
 	.theme_list.active {
-		z-index: 1000;
 		display: block;
+		background-color: black;
+	}
+
+	.theme_list.active li a {
+		z-index: 1000;
 		position: fixed;
 		height: 100vh;
 		width: 100%;
-		left: -100%;
-		top: 0;
-		background: #00274c;
-		text-align: center;
-		padding-top: 80px;
-		transition: all 0.3s ease;
+		/*left: -100%;*/
+		/*top: 0;*/
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 15px;
+		font-weight: 500;
 	}
 
 	.home .home-content .text-1 {
