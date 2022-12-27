@@ -268,6 +268,49 @@ a, a:visited {
 	height: 25px;
 }
 
+/*Themes*/
+.theme {
+	line-height: 25px;
+	display: none;
+} 
+
+.navbar .menu .theme li a{
+	display: block;
+	font-size: 14px;
+	font-color: black;
+}
+
+
+.navbar .max-width ul li:hover .theme {
+	display: block;
+	border-radius: 5px;
+	position: absolute;
+	/*opacity: 95%;*/
+	background: #00274C;
+	margin-top: 0px;
+	margin-left: 15px;
+	z-index: 200;
+}
+
+.navbar .max-width ul li:hover .theme ul{
+	display: block;
+	margin: 10px;
+}
+
+.navbar ul li:hover .theme ul li{
+	width: 150px;
+	padding: 3px 3px;
+	border-bottom: thick double white;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.navbar ul li:hover .theme ul li:last-child{
+	border-bottom: none;
+}
+
+
 /*Memories*/
 .memories {
 	line-height: 25px;
@@ -275,9 +318,8 @@ a, a:visited {
 }
 
 .navbar .menu .memories li a{
-	/*font-color: green;*/
 	display: block;
-	font-size: 15px;
+	font-size: 14px;
 	font-color: black;
 }
 
@@ -300,7 +342,7 @@ a, a:visited {
 
 .navbar ul li:hover .memories ul li{
 	width: 150px;
-	padding: 10px 10px;
+	padding: 3px 3px;
 	border-bottom: thick double white;
 	background: transparent;
 	border-radius: 0;

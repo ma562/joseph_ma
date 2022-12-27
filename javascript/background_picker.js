@@ -1,4 +1,4 @@
-alert("Joseph's currently working on a memories section of his website. It's not working at the moment but will be up by the beginning of 2023. Click Ok to continue to site.")
+//alert("Joseph's currently working on a memories section of his website. It's not working at the moment but will be up by the beginning of 2023. Click Ok to continue to site.")
 
 const my_background = localStorage.getItem('my__background');
 console.log(my_background)
@@ -23,8 +23,24 @@ if(my_background == null) {
 }
 else {
 	//memories background selector
+	if(my_background > 0) {
+		pick = my_background
+		pick *= 4;
+		pick -= Math.floor(Math.random() * 4);
+	}
+	if (screen.width >= 1300) {
+		bkground = "url('backgrounds/background_" + String(pick) + ".png')"
+		id.style.backgroundImage = bkground
+	}
+	else {
+		bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
+		id.style.backgroundImage = bkground
+	}
+
+	/*
 	bkground = "url('images/glow_stark5.png')"
 	id.style.backgroundImage = bkground
+	*/
 }
 
 id.style.backgroundSize = "cover";
