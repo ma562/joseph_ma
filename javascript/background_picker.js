@@ -1,7 +1,6 @@
 //alert("Joseph's currently working on a memories section of his website. It's not working at the moment but will be up by the beginning of 2023. Click Ok to continue to site.")
 
 const my_background = localStorage.getItem('my__background');
-console.log(my_background)
 
 let id = document.getElementById("home")
 
@@ -36,11 +35,6 @@ else {
 		bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
 		id.style.backgroundImage = bkground
 	}
-
-	/*
-	bkground = "url('images/glow_stark5.png')"
-	id.style.backgroundImage = bkground
-	*/
 }
 
 id.style.backgroundSize = "cover";

@@ -23,8 +23,20 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#projects">Projects</a></li>
-				<li><a href="#themes">Themes</a>
+				<li class = "themes"><a href="">Themes</a>
 					<div class = "theme">
+						<ul>
+							<li id = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
+							<li id = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
+							<li id = "wordle_solver"><a href = "https://joseph-ma.com/">Wordle Solver</a></li><br>
+							<li id = "stark_tower"><a href = "https://joseph-ma.com/">Stark Tower</a></li><br>
+							<li id = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
+							<li id = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
+							<li id = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
+							<li id = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li>
+						</ul>
+					</div>
+					<div class = "theme_list">
 						<ul>
 							<li id = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
 							<li id = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
@@ -48,6 +60,37 @@
 						      localStorage.setItem("my__background", i + 1)
 						    });
 						}
+
+						//THEME SELECTOR - MOBILE DEVICE
+						const mediaQuery = window.matchMedia("(max-width: 947px)");
+
+						// function to apply styles or properties based on the media query
+						const theme_button = document.querySelector(".themes");
+						const theme_element = document.querySelector(".theme_list");
+						function handleMediaQueryChange(mediaQuery) {
+						  if (mediaQuery.matches) {
+						    // add the event listener using a named function
+						    theme_button.addEventListener('click', handleClick);
+						    console.log("thin")
+						  } else {
+						    // remove the event listener using the same named function
+						    theme_button.removeEventListener('click', handleClick);
+						    console.log("wide")
+						  }
+						}
+
+						// named function to handle the click event
+						function handleClick(event) {
+						  event.preventDefault();
+						  theme_element.classList.toggle("active");
+						  console.log("toggled");
+						}
+
+						// add a listener to the media query to detect changes in screen width
+						mediaQuery.addListener(handleMediaQueryChange);
+
+						// call the function initially to apply styles or properties based on the current screen width
+						handleMediaQueryChange(mediaQuery);
 					</script>
 				</li>
 

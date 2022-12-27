@@ -310,6 +310,10 @@ a, a:visited {
 	border-bottom: none;
 }
 
+.theme_list {
+	display: none;
+}
+
 
 /*Memories*/
 .memories {
@@ -487,9 +491,36 @@ a, a:visited {
 	.max-width{
 		padding: 0 50px;
 	}
+
 }
 
 @media (max-width: 947px){
+	/*hamburger button appears so undo the hover effects in themes/memories*/
+	.theme, .memories {
+		all: unset;
+		display: none;
+	} 
+
+	.navbar .menu .theme li a, .navbar .menu .memories li a{
+		all: unset;
+		display: none;
+	}
+
+	.navbar .max-width ul li:hover .theme, .navbar .max-width ul li:hover .memories {
+		all: unset;
+		display: none;
+	}
+
+	.navbar .max-width ul li:hover .theme ul, .navbar .max-width ul li:hover .memories ul{
+		all: unset;
+		display: none;
+	}
+
+	.navbar ul li:hover .theme ul li, .navbar ul li:hover .memories ul li{
+		all: unset;
+		display: none;
+	}
+
 	.menu-btn{
 		display: block;
 		z-index: 999;
@@ -521,6 +552,20 @@ a, a:visited {
 		margin: 30px 0;
 		font-size: 30px;
 		font-weight: 500;
+	}
+
+	.theme_list.active {
+		z-index: 1000;
+		display: block;
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: -100%;
+		top: 0;
+		background: #00274c;
+		text-align: center;
+		padding-top: 80px;
+		transition: all 0.3s ease;
 	}
 
 	.home .home-content .text-1 {
