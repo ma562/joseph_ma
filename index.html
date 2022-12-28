@@ -18,34 +18,40 @@
 <body>
 	<nav class = "navbar">
 		<div class = "max-width">
-			<div class = "logo"><a href="#">Joseph's <span>Portfolio</a></div>
 			<div class = "theme_list">
+				<div class = "x">
+					<i class="fa-solid fa-bars active"></i>
+				</div>
+				<div class = "mobile_title">THEMES<br>-------------<br></div>
 				<ul>
-					<li id = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
-					<li id = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
-					<li id = "wordle_solver"><a href = "https://joseph-ma.com/">Wordle Solver</a></li><br>
-					<li id = "stark_tower"><a href = "https://joseph-ma.com/">Stark Tower</a></li><br>
-					<li id = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
-					<li id = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
-					<li id = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
-					<li id = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li>
+					<li class = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
+					<li class = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
+					<li class = "wordle_solver"><a href = "https://joseph-ma.com/">Wordle Solver</a></li><br>
+					<li class = "stark_tower"><a href = "https://joseph-ma.com/">Stark Tower</a></li><br>
+					<li class = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
+					<li class = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
+					<li class = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
+					<li class = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li>
 				</ul>
+
 			</div>
+			<div class = "logo"><a href="#">Joseph's <span>Portfolio</a></div>
+
 			<ul class = "menu">
 				<li class = "original_button"><a href="#">Home</a></li>
 				<li class = "original_button"><a href="#about">About</a></li>
 				<li class = "original_button"><a href="#projects">Projects</a></li>
-				<li class = "themes" onclick="preventRefresh(event)"><a>Themes</a>
+				<li><a class = "themes">Themes</a>
 					<div class = "theme">
 						<ul>
-							<li id = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
-							<li id = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
-							<li id = "wordle_solver"><a href = "https://joseph-ma.com/">Wordle Solver</a></li><br>
-							<li id = "stark_tower"><a href = "https://joseph-ma.com/">Stark Tower</a></li><br>
-							<li id = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
-							<li id = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
-							<li id = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
-							<li id = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li>
+							<li class = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
+							<li class = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
+							<li class = "wordle_solver"><a href = "https://joseph-ma.com/">Wordle Solver</a></li><br>
+							<li class = "stark_tower"><a href = "https://joseph-ma.com/">Stark Tower</a></li><br>
+							<li class = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
+							<li class = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
+							<li class = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
+							<li class = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li>
 						</ul>
 					</div>
 					<script>
@@ -55,10 +61,12 @@
 						const theme_list = new Array(my_themes.length)
 
 						for(let i = 0; i < my_themes.length; i++) {
-							theme_list[i] = document.querySelector("#" + my_themes[i]);
-						    theme_list[i].addEventListener("click", (event) => {
-						      localStorage.setItem("my__background", i + 1)
-						    });
+							theme_list[i] = document.querySelectorAll("." + my_themes[i]);
+							theme_list[i].forEach(element => {
+							  element.addEventListener('click', () => {
+							    localStorage.setItem("my__background", i + 1);
+							  });
+							});
 						}
 
 						//THEME SELECTOR - MOBILE DEVICE
@@ -71,11 +79,9 @@
 						  if (mediaQuery.matches) {
 						    // add the event listener using a named function
 						    theme_button.addEventListener('click', handleClick);
-						    console.log("thin")
 						  } else {
 						    // remove the event listener using the same named function
 						    theme_button.removeEventListener('click', handleClick);
-						    console.log("wide")
 						  }
 						}
 
@@ -94,7 +100,7 @@
 					</script>
 				</li>
 
-				<li><a>Memories</a>
+				<li><a class = "themes">Memories</a>
 					<div class = "memories">
 						<div class = "mems">
 							<ul>
