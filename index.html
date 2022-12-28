@@ -126,6 +126,15 @@
 			<div class ="menu-btn">
 				<i class="fa-solid fa-bars"></i>
 			</div>
+			<script>
+				//X BUTTON FORMATTER
+				const element1 = document.querySelector('.menu-btn');
+				const rect = element1.getBoundingClientRect();
+
+				const element2 = document.querySelector('.x');
+				element2.style.left = `${rect.left}px`;
+				element2.style.top = `${rect.top}px`;
+			</script>
 		</div>
 	</nav>
 	<!--HOME SECTION-->
