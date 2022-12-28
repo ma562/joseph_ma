@@ -33,7 +33,16 @@
 					<li class = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
 					<li class = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li>
 				</ul>
-
+			</div>
+			<div class = "memory_list">
+				<div class = "x2">
+					<i class="fa-solid fa-bars active"></i>
+				</div>
+				<div class = "mobile_title">MEMORIES<br><br></div>
+				<ul>
+					<li class = "summer22"><a href = "https://joseph-ma.com/">Summer 22'</a></li><br>
+					<li class = "fall22"><a href = "https://joseph-ma.com/">Fall 22'</a></li>
+				</ul>
 			</div>
 			<div class = "logo"><a href="#">Joseph's <span>Portfolio</a></div>
 
@@ -68,56 +77,27 @@
 							  });
 							});
 						}
-
-						//THEME SELECTOR - MOBILE DEVICE
-						const mediaQuery = window.matchMedia("(max-width: 947px)");
-
-						// function to apply styles or properties based on the media query
-						const theme_button = document.querySelector(".themes");
-						const theme_element = document.querySelector(".theme_list");
-						function handleMediaQueryChange(mediaQuery) {
-						  if (mediaQuery.matches) {
-						    // add the event listener using a named function
-						    theme_button.addEventListener('click', handleClick);
-						  } else {
-						    // remove the event listener using the same named function
-						    theme_button.removeEventListener('click', handleClick);
-						  }
-						}
-
-						// named function to handle the click event
-						function handleClick(event) {
-						  event.preventDefault();
-						  theme_element.classList.toggle("active");
-						  console.log("toggled");
-						}
-
-						// add a listener to the media query to detect changes in screen width
-						mediaQuery.addListener(handleMediaQueryChange);
-
-						// call the function initially to apply styles or properties based on the current screen width
-						handleMediaQueryChange(mediaQuery);
 					</script>
 				</li>
 
-				<li><a class = "themes">Memories</a>
+				<li><a class = "mems">Memories</a>
 					<div class = "memories">
-						<div class = "mems">
-							<ul>
-								<li id = "summer22"><a href = "https://joseph-ma.com/">Summer 22'</a></li><br>
-								<li id = "fall22"><a href = "https://joseph-ma.com/">Fall 22'</a></li>
-							</ul>
-						</div>
+						<ul>
+							<li class = "summer22"><a href = "https://joseph-ma.com/">Summer 22'</a></li><br>
+							<li class = "fall22"><a href = "https://joseph-ma.com/">Fall 22'</a></li>
+						</ul>
 						<script>
 							//MEMORY SELECTOR
 							const my_memories = ["summer22", "fall22"]
 							const memory_list = new Array(my_memories.length)
 
 							for(let i = 0; i < my_memories.length; i++) {
-								memory_list[i] = document.querySelector("#" + my_memories[i]);
-							    memory_list[i].addEventListener("click", (event) => {
-							      localStorage.setItem("my__background", my_memories[i])
-							    });
+								memory_list[i] = document.querySelectorAll("." + my_memories[i]);
+								memory_list[i].forEach(element => {
+								  element.addEventListener('click', () => {
+								    localStorage.setItem("my__background", my_memories[i]);
+								  });
+								});
 							}
 						</script>
 					</div>
@@ -127,31 +107,83 @@
 				<i class="fa-solid fa-bars"></i>
 			</div>
 			<script>
+				//THEME/MEMORIES SELECTOR - MOBILE DEVICE
+				const mediaQuery = window.matchMedia("(max-width: 947px)");
+
+				// function to apply styles or properties based on the media query
+				const theme_button = document.querySelector(".themes");
+				const theme_element = document.querySelector(".theme_list");
+				const memory_button = document.querySelector(".mems");
+				const memory_element = document.querySelector(".memory_list");
+
+				function handleMediaQueryChange(mediaQuery) {
+				  if (mediaQuery.matches) {
+				    // add the event listener using a named function
+				    theme_button.addEventListener('click', handleClick);
+				    memory_button.addEventListener('click', handleClick2);
+				  } else {
+				    // remove the event listener using the same named function
+				    theme_button.removeEventListener('click', handleClick);
+				    memory_button.removeEventListener('click', handleClick2);
+				  }
+				}
+
+				// named function to handle the click event
+				function handleClick(event) {
+				  event.preventDefault();
+				  theme_element.classList.toggle("active");
+				}
+
+				function handleClick2(event) {
+				  event.preventDefault();
+				  memory_element.classList.toggle("active");
+				}
+
+				// add a listener to the media query to detect changes in screen width
+				mediaQuery.addListener(handleMediaQueryChange);
+
+				// call the function initially to apply styles or properties based on the current screen width
+				handleMediaQueryChange(mediaQuery);
+
 				//X BUTTON FORMATTER
 				const x_button = document.querySelector(".x");
+				const x2_button = document.querySelector(".x2");
 				x_button.addEventListener('click', closeTheme);
+				x2_button.addEventListener('click', closeMemory);
+
 				const theme_element2 = document.querySelector(".theme_list");
+				const memory_element2 = document.querySelector(".memory_list");
+
 				function closeTheme(event) {
-				  // event.preventDefault();
 				  theme_element2.classList.remove('active');
 				  theme_element2.classList.add('inactive');
-				  console.log("toggled");
+				}
+
+				function closeMemory(event) {
+				  memory_element2.classList.remove('active');
+				  memory_element2.classList.add('inactive');
 				}
 
 				const element1 = document.querySelector('.menu-btn');
 				const rect = element1.getBoundingClientRect();
 
 				const element2 = document.querySelector('.x');
+				const element3 = document.querySelector('.x2');
 				element2.style.left = `${rect.left}px`;
 				element2.style.top = `${rect.top}px`;
+				element3.style.left = `${rect.left}px`;
+				element3.style.top = `${rect.top}px`;
 
 				window.addEventListener('resize', () => {
 				  const element1 = document.querySelector('.menu-btn');
 				  const rect = element1.getBoundingClientRect();
 
 				  const element2 = document.querySelector('.x');
+				  const element3 = document.querySelector('.x2');
 				  element2.style.left = `${rect.left}px`;
 				  element2.style.top = `${rect.top}px`;
+				  element3.style.left = `${rect.left}px`;
+				  element3.style.top = `${rect.top}px`;
 				});
 			</script>
 		</div>
@@ -181,7 +213,7 @@
 				</div>
 				<div class = "column right">
 					<div class = "text">Hello there. I'm Joseph!</div>
-					<p>I'm currently an undergraduate student at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b> pursuing a degree in Computer Engineering. I love how it's a perfect blend between electrical engineering/computer science and find inspiration from watching content like <b><a href = "https://www.youtube.com/c/Electroboom" target = "blank">ElectroBOOM</a></b> and <b><a href = "https://www.youtube.com/watch?v=UwsrzCVZAb8&ab_channel=YouTubeOriginals" target = "_blank">The Age of A.I.</a></b>. My interests include data structures and algorithms, full stack web development, embedded systems, digital design, machine learning, artifical intelligence and robotics. I'm currently working on research in reinforcement learning. In my spare time I enjoy biking, swimming, cooking, watching movies and creating digital art - refresh the homepage to see more!</p>
+					<p>I'm currently an undergraduate student at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b> pursuing a degree in Computer Engineering. I love how it's a perfect blend between electrical engineering/computer science and find inspiration from watching content like <b><a href = "https://www.youtube.com/c/Electroboom" target = "blank">ElectroBOOM</a></b> and <b><a href = "https://www.youtube.com/watch?v=UwsrzCVZAb8&ab_channel=YouTubeOriginals" target = "_blank">The Age of A.I.</a></b>. My interests include data structures and algorithms, full stack web development, embedded systems, digital design, machine learning, artifical intelligence and robotics. I'm currently working on research in reinforcement learning. In my spare time I enjoy biking, swimming, cooking, watching movies and creating digital art - check out the <b>Themes</b> and <b>Memories</b> section to see more!</p>
 					<br>
 					<p>Want to collab on a project or have any questions? Feel free to contact me.</p>
 					<div class = "icon-box">

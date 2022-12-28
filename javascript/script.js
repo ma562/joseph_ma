@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 	//typing script
 	var typed = new Typed(".typing", {
-		strings: ["a Computer Engineer", "an Electrical Engineer", "a Programmer", "a Robotics Enthusiast", "a Pythonista", "a Boilermaker"],
+		strings: ["a Computer Engineer", "an Electrical Engineer", "a Programmer", "a Robotics Enthusiast", "a Pythonista", "a Digital Artist", "a Boilermaker"],
 		typeSpeed: 100,
 		backSpeed: 60,
 		loop: true

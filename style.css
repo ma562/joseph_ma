@@ -269,7 +269,7 @@ a, a:visited {
 }
 
 /*Themes*/
-.themes {
+.mems, .themes {
 	cursor: pointer;
 }
 
@@ -314,7 +314,7 @@ a, a:visited {
 	border-bottom: none;
 }
 
-.theme_list {
+.memory_list, .theme_list {
 	display: none;
 }
 
@@ -565,14 +565,14 @@ a, a:visited {
 		font-size: 40px;
 	}
 
-	.x {
+	.x, .x2 {
 /*		display: block;*/
 		font-size: 23px;
 		position: absolute;
 		cursor: pointer;
 	}
 
-	.x i.active:before {
+	.x i.active:before, .x2 i.active:before {
 		content: "\f00d";
 	}
 
@@ -590,7 +590,21 @@ a, a:visited {
 		color: #00274C;
 	}
 
-	.theme_list.active {
+	.navbar .memory_list.active {
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		text-align: center;
+		padding-top: 80px;
+		height: 100vh;
+		width: 100%;
+		font-size: 27px;
+		font-weight: 500;
+		background-color: white;
+		color: #00274C;
+	}
+
+	.memory_list.active, .theme_list.active {
 		display: block;
 		left: 0;
 	}
