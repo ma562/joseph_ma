@@ -318,6 +318,9 @@ a, a:visited {
 	display: none;
 }
 
+.hidden {
+	display: none;
+}
 
 /*Memories*/
 .memories {
@@ -573,7 +576,7 @@ a, a:visited {
 		content: "\f00d";
 	}
 
-	.navbar .theme_list {
+	.navbar .theme_list.active {
 		position: fixed;
 		z-index: 1000;
 		top: 0;

@@ -22,7 +22,7 @@
 				<div class = "x">
 					<i class="fa-solid fa-bars active"></i>
 				</div>
-				<div class = "mobile_title">THEMES<br>-------------<br></div>
+				<div class = "mobile_title">THEMES<br><br></div>
 				<ul>
 					<li class = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
 					<li class = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
@@ -128,12 +128,31 @@
 			</div>
 			<script>
 				//X BUTTON FORMATTER
+				const x_button = document.querySelector(".x");
+				x_button.addEventListener('click', closeTheme);
+				const theme_element2 = document.querySelector(".theme_list");
+				function closeTheme(event) {
+				  // event.preventDefault();
+				  theme_element2.classList.remove('active');
+				  theme_element2.classList.add('inactive');
+				  console.log("toggled");
+				}
+
 				const element1 = document.querySelector('.menu-btn');
 				const rect = element1.getBoundingClientRect();
 
 				const element2 = document.querySelector('.x');
 				element2.style.left = `${rect.left}px`;
 				element2.style.top = `${rect.top}px`;
+
+				window.addEventListener('resize', () => {
+				  const element1 = document.querySelector('.menu-btn');
+				  const rect = element1.getBoundingClientRect();
+
+				  const element2 = document.querySelector('.x');
+				  element2.style.left = `${rect.left}px`;
+				  element2.style.top = `${rect.top}px`;
+				});
 			</script>
 		</div>
 	</nav>
