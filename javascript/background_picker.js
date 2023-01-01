@@ -24,7 +24,6 @@ if((my_background == null) || (is_theme == null)) {
 else {
 	//memories background selector
 	if(is_theme == 1) {
-		alert("it's themes")
 		pick = my_background
 		pick *= 4;
 		pick -= Math.floor(Math.random() * 4);
@@ -37,7 +36,6 @@ else {
 		id.style.backgroundImage = bkground
 	}
 	else {
-		alert("it's memory")
 		if(screen.width >= 1300) {
 			bkground = "url('memories/" + my_background + ".png')"
 		}
@@ -47,11 +45,9 @@ else {
 		id.style.backgroundImage = bkground
 	}
 	//remove the localStorage so if page is refreshed we go back to homepage
-	localStorage.removeItem('my__background');
-	localStorage.removeItem('my__theme');
 }
-
-//here
+localStorage.removeItem('my__background');
+localStorage.removeItem('my__theme');
 
 id.style.backgroundSize = "cover";
 id.style.backgroundRepeat = "no-repeat"
