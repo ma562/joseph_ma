@@ -23,7 +23,7 @@ if((my_background == null) || (is_theme == null)) {
 }
 else {
 	//memories background selector
-	if(is_theme) {
+	if(is_theme == 1) {
 		alert("it's themes")
 		pick = my_background
 		pick *= 4;
@@ -46,15 +46,12 @@ else {
 		}
 		id.style.backgroundImage = bkground
 	}
+	//remove the localStorage so if page is refreshed we go back to homepage
+	localStorage.removeItem('my__background');
+	localStorage.removeItem('my__theme');
 }
-
-//code change
-// bkground = "url('backgrounds/Base_Background.png')"
-// id.style.backgroundImage = bkground
 
 //here
 
 id.style.backgroundSize = "cover";
 id.style.backgroundRepeat = "no-repeat"
-
-localStorage.removeItem('my__background');
