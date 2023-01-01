@@ -40,7 +40,7 @@ else {
 			bkground = "url('memories/" + my_background + ".png')"
 		}
 		else {
-			bkground = "url('mobile_memories/" + my_background + ".png')"
+			bkground = "url('mobile_memories/mobile_" + my_background + ".png')"
 		}
 		id.style.backgroundImage = bkground
 	}
