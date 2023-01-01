@@ -31,7 +31,7 @@ else {
 			bkground = "url('backgrounds/background_" + String(pick) + ".png')"
 		}
 		else {
-			bkground = "url('mobile_backgrounds/mobile_" + String(pick) + ".png')"
+			bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
 		}
 		id.style.backgroundImage = bkground
 	}
