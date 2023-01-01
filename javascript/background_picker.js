@@ -23,6 +23,7 @@ if(my_background == null) {
 else {
 	//memories background selector
 	if(typeof my_background == "string") {
+		alert("it's a string!")
 		//string --> MEMORIES section
 		if(screen.width >= 1300) {
 			bkground = "url('memories/" + my_background + ".png')"

@@ -73,7 +73,7 @@
 							theme_list[i] = document.querySelectorAll("." + my_themes[i]);
 							theme_list[i].forEach(element => {
 							  element.addEventListener('click', () => {
-							    localStorage.setItem("my__background", i + 1);
+							    localStorage.setItem("my__background", parseInt(i + 1));
 							  });
 							});
 						}
