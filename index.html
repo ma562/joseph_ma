@@ -74,6 +74,7 @@
 							theme_list[i].forEach(element => {
 							  element.addEventListener('click', () => {
 							    localStorage.setItem("my__background", parseInt(i + 1));
+							    localStorage.setItem("is__theme", 1);
 							  });
 							});
 						}
@@ -96,6 +97,7 @@
 								memory_list[i].forEach(element => {
 								  element.addEventListener('click', () => {
 								    localStorage.setItem("my__background", my_memories[i]);
+								    localStorage.setItem("is__theme", 0);
 								  });
 								});
 							}
