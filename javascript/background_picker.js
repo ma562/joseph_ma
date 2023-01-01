@@ -47,7 +47,7 @@ else {
 	//remove the localStorage so if page is refreshed we go back to homepage
 }
 localStorage.removeItem('my__background');
-localStorage.removeItem('my__theme');
+localStorage.removeItem('is__theme');
 
 id.style.backgroundSize = "cover";
 id.style.backgroundRepeat = "no-repeat"
