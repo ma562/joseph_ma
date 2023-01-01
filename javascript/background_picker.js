@@ -22,7 +22,7 @@ if(my_background == null) {
 }
 else {
 	//memories background selector
-	if(typeof my_background == "string") {
+	if(isNan(Number(my_background))) {
 		alert("it's a string!")
 		//string --> MEMORIES section
 		if(screen.width >= 1300) {
