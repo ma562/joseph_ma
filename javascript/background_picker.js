@@ -45,6 +45,7 @@ else {
 		id.style.backgroundImage = bkground
 	}
 }
+
 //remove the localStorage so if page is refreshed we go back to homepage
 localStorage.removeItem('my__background');
 localStorage.removeItem('is__theme');
