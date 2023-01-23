@@ -17,16 +17,17 @@ if((my_background == null) || (is_theme == null)) {
   			id.style.backgroundImage = bkground
   		}
   		else {
-  			bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
+  			bkground = "url('mobile_backgrounds/mobile_night.png')"
   			id.style.backgroundImage = bkground
   		}
 	} else {
+		//It's day time
   		if (screen.width >= 1300) {
   			bkground = "url('backgrounds/Base_Background_Day.png')"
   			id.style.backgroundImage = bkground
   		}
   		else {
-  			bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
+  			bkground = "url('mobile_backgrounds/mobile_day.png')"
   			id.style.backgroundImage = bkground
   		}
 	}
