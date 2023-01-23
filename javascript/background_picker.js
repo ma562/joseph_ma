@@ -7,17 +7,28 @@ let id = document.getElementById("home")
 
 if((my_background == null) || (is_theme == null)) {
 	//we did not previously select a background --> randomly generate one
-	NUM_BACKGROUNDS = 28
-	pick = Math.floor(Math.random() * NUM_BACKGROUNDS) + 1
+	let currentTime = new Date();
+	let currentHour = currentTime.getHours();
 
-	if (screen.width >= 1300) {
-
-		bkground = "url('backgrounds/Base_Background_Day.png')"
-		id.style.backgroundImage = bkground
-	}
-	else {
-		bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
-		id.style.backgroundImage = bkground
+	if (currentHour >= 18 || currentHour < 6) {
+		//It's night time
+  		if (screen.width >= 1300) {
+  			bkground = "url('backgrounds/Base_Background_Night.png')"
+  			id.style.backgroundImage = bkground
+  		}
+  		else {
+  			bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
+  			id.style.backgroundImage = bkground
+  		}
+	} else {
+  		if (screen.width >= 1300) {
+  			bkground = "url('backgrounds/Base_Background_Day.png')"
+  			id.style.backgroundImage = bkground
+  		}
+  		else {
+  			bkground = "url('mobile_backgrounds/mobile_background_" + String(pick) + ".png')"
+  			id.style.backgroundImage = bkground
+  		}
 	}
 
 }
