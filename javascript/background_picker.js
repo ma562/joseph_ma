@@ -12,7 +12,7 @@ if((my_background == null) || (is_theme == null)) {
 
 	if (screen.width >= 1300) {
 
-		bkground = "url('backgrounds/background_" + String(pick) + ".png')"
+		bkground = "url('backgrounds/Base_Background_Day.png')"
 		id.style.backgroundImage = bkground
 	}
 	else {
