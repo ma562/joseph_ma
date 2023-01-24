@@ -806,7 +806,7 @@ var pJS = function(tag_id, params){
         if(warning_4 && num_bots > 140) {
           alert("That's enough.")
           warning_4 = true;
-          localStorage.removeItem("warned__already", true);
+          localStorage.removeItem("warned__already");
           location.assign("https://www.joseph-ma.com");
         }
       }
