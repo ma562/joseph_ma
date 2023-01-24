@@ -769,7 +769,7 @@ var pJS = function(tag_id, params){
 
     for(var i = 0; i < nb; i++){
       num_bots += 1;
-      if(localStorage.getItem('warned__already') == null) {
+      if(localStorage.getItem(warned__already) == null) {
         if(warning_1 && num_bots > 40) {
           alert(alert_1[Math.floor(Math.random() * alert_1.length)]);
           warning_1 = false;
@@ -785,7 +785,7 @@ var pJS = function(tag_id, params){
         if(warning_4 && num_bots > 140) {
           alert("Due to your inability to follow instructions and stop creating more robots, the site will now be refreshed.")
           warning_4 = false;
-          localStorage.setItem("warned__already", true);
+          localStorage.setItem(warned__already, true);
           location.assign("https://www.joseph-ma.com");
         }
       }
@@ -806,7 +806,7 @@ var pJS = function(tag_id, params){
         if(warning_4 && num_bots > 140) {
           alert("That's enough.")
           warning_4 = true;
-          localStorage.removeItem("warned__already");
+          localStorage.removeItem(warned__already);
           location.assign("https://www.joseph-ma.com");
         }
       }
