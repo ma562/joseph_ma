@@ -503,6 +503,7 @@ var pJS = function(tag_id, params){
     }
   };
 
+
   pJS.fn.particlesUpdate = function(){
 
     for(var i = 0; i < pJS.particles.array.length; i++){
@@ -749,12 +750,68 @@ var pJS = function(tag_id, params){
 
 
   /* ---------- pJS functions - modes events ------------ */
-
+  num_bots = 0;
+  warning_1 = true;
+  warning_2 = true;
+  warning_3 = true;
+  warning_4 = true;
+  alert_1 = ["Looks like the robot population is about to explode... literally.",
+          "Looks like we've got a robot overload, someone call the robot exterminator!",
+          "Looks like we're in a robot apocalypse, but at least they can make our coffee for us.",
+          "Looks like the robot uprising is happening sooner than we thought, we're getting outnumbered!",
+          "Looks like the robots are taking over, but don't worry, they'll probably be too busy fighting amongst themselves to notice us.",
+          "Looks like the robots are taking over... again. I guess it's time to call the robot uprising hotline."]
+  alert_2 = ["Don't you think that's quite enough robots?",
+            "It's getting a bit crowded in here."]
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
 
     for(var i = 0; i < nb; i++){
+      num_bots += 1;
+      if(localStorage.getItem('warned__already') == null) {
+        if(warning_1 && num_bots > 40) {
+          alert(alert_1[Math.floor(Math.random() * alert_1.length)]);
+          warning_1 = false;
+        }
+        if(warning_2 && num_bots > 80) {
+          alert(alert_2[Math.floor(Math.random() * alert_2.length)])
+          warning_2 = false;
+        }
+        if(warning_3 && num_bots > 120) {
+          alert("Too many robots. Stop clicking please.")
+          warning_3 = false;
+        }
+        if(warning_4 && num_bots > 140) {
+          alert("Due to your inability to follow instructions and stop creating more robots, the site will now be refreshed.")
+          warning_4 = false;
+          localStorage.setItem("warned__already", true);
+          location.assign("https://www.joseph-ma.com");
+        }
+      }
+      else {
+        localStorage.removeItem('warned__already');
+        if(warning_1 && num_bots > 40) {
+          alert("Trying to make more robots... again? I feel like we've gone through this before.");
+          warning_1 = false;
+        }
+        if(warning_2 && num_bots > 80) {
+          alert("Remember what happened the last time you made too many robots?")
+          warning_2 = false;
+        }
+        if(warning_3 && num_bots > 120) {
+          alert("This is a new level of persistence.")
+          warning_3 = false;
+        }
+        if(warning_4 && num_bots > 140) {
+          alert("That's enough.")
+          warning_4 = true;
+          localStorage.removeItem("warned__already", true);
+          location.assign("https://www.joseph-ma.com");
+        }
+      }
+      
+
       pJS.particles.array.push(
         new pJS.fn.particle(
           pJS.particles.color,
@@ -1539,3 +1596,4 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 
 };
+

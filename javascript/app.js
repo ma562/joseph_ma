@@ -21,13 +21,14 @@ else if (screen.width >= 700) {
 else {
   size_val = 28;
 }
+console.log(particlesJS.particles)
 
 particlesJS('particles-js',
   
   {
     "particles": {
       "number": {
-        "value": 4,
+        "value": 3,
         "density": {
           "enable": true,
           "value_area": 800
@@ -46,7 +47,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "images/binary_art_2.png",
+          "src": "images/binary_art_3.png",
           "height": 1000,
           "width": 1000
         }
@@ -81,7 +82,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 8,
+        "speed": 3,
         "direction": "none",
         "random": false,
         "straight": false,
