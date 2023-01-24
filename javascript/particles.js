@@ -766,7 +766,7 @@ var pJS = function(tag_id, params){
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
-    const warned = localStorage.getItem(warned__already)
+    const warned = localStorage.getItem('warned__already')
 
     for(var i = 0; i < nb; i++){
       num_bots += 1;
@@ -786,7 +786,7 @@ var pJS = function(tag_id, params){
         if(warning_4 && num_bots > 140) {
           alert("Due to your inability to follow instructions and stop creating more robots, the site will now be refreshed.")
           warning_4 = false;
-          localStorage.setItem(warned__already, true);
+          localStorage.setItem('warned__already', true);
           location.assign("https://www.joseph-ma.com");
         }
       }
