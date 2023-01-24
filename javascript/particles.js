@@ -755,6 +755,7 @@ var pJS = function(tag_id, params){
   warning_2 = true;
   warning_3 = true;
   warning_4 = true;
+  const warned = localStorage.getItem('warned__already')
   alert_1 = ["Looks like the robot population is about to explode... literally.",
           "Looks like we've got a robot overload, someone call the robot exterminator!",
           "Looks like we're in a robot apocalypse, but at least they can make our coffee for us.",
@@ -766,7 +767,7 @@ var pJS = function(tag_id, params){
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
-    const warned = localStorage.getItem('warned__already')
+    
 
     for(var i = 0; i < nb; i++){
       num_bots += 1;
