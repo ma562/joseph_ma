@@ -766,10 +766,11 @@ var pJS = function(tag_id, params){
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
+    const warned = localStorage.getItem(warned__already)
 
     for(var i = 0; i < nb; i++){
       num_bots += 1;
-      if(localStorage.getItem(warned__already) == null) {
+      if(warned == null) {
         if(warning_1 && num_bots > 40) {
           alert(alert_1[Math.floor(Math.random() * alert_1.length)]);
           warning_1 = false;
