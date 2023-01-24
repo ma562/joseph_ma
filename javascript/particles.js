@@ -755,62 +755,58 @@ var pJS = function(tag_id, params){
   warning_2 = true;
   warning_3 = true;
   warning_4 = true;
-  const warned = localStorage.getItem('warned__already')
+
   alert_1 = ["Looks like the robot population is about to explode... literally.",
           "Looks like we've got a robot overload, someone call the robot exterminator!",
           "Looks like we're in a robot apocalypse, but at least they can make our coffee for us.",
           "Looks like the robot uprising is happening sooner than we thought, we're getting outnumbered!",
           "Looks like the robots are taking over, but don't worry, they'll probably be too busy fighting amongst themselves to notice us.",
-          "Looks like the robots are taking over... again. I guess it's time to call the robot uprising hotline."]
+          "Looks like the robots are taking over... again. I guess it's time to call the robot uprising hotline.",
+          "Looks like the robots are multiplying at an alarming rate, maybe we should start building robot shelters.",
+          "Looks like the robots are reproducing faster than a breeding farm, time to call the robot control.",
+          "Looks like the robots are multiplying at an alarming rate, maybe we should start building robot shelters."]
   alert_2 = ["Don't you think that's quite enough robots?",
-            "It's getting a bit crowded in here."]
+            "It's getting a bit crowded in here.", 
+            "I think we've hit our robot carrying capacity.",
+            "I think it's time to start limiting the robot population growth.",
+            "Looks like we've reached our robot quota, time to call it a day."]
+  alert_3 = ["Too many robots, stop clicking before they start organizing a union strike.",
+            "Too many robots. Stop clicking please.",
+            "I think we have enough robots to start our own robot army, but please stop clicking.",
+            "I think we're reaching robot saturation point, stop clicking before they start taking over our jobs."]
+  alert_4 = ["Looks like someone can't follow simple instructions, because of that the site will now be refreshed.",    
+            "I think someone needs a lesson in following instructions, and because of that the site will now be refreshed.",    
+            "I think someone needs to learn how to control themselves, because of that the site will now be refreshed.",    
+            "Looks like someone can't stop themselves, because of that the site will now be refreshed.",    
+            "I think we have a robot-making-addict on our hands, and because of that the site will now be refreshed.",    
+            "Looks like someone can't resist the urge to create more robots, because of that the site will now be refreshed.",    
+            "I think we have a robot-making-problem, and because of that the site will now be refreshed.",    
+            "Looks like someone can't stop creating robots, and because of that the site will now be refreshed.",    
+            "I think someone is addicted to creating robots, because of that the site will now be refreshed.",    
+            "Looks like we have a robot-making-obsessed person, and because of that the site will now be refreshed.",
+            "Due to your inability to follow instructions and stop creating more robots, the site will now be refreshed."];
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
     
-
     for(var i = 0; i < nb; i++){
       num_bots += 1;
-      if(warned == null) {
-        if(warning_1 && num_bots > 40) {
-          alert(alert_1[Math.floor(Math.random() * alert_1.length)]);
-          warning_1 = false;
-        }
-        if(warning_2 && num_bots > 80) {
-          alert(alert_2[Math.floor(Math.random() * alert_2.length)])
-          warning_2 = false;
-        }
-        if(warning_3 && num_bots > 120) {
-          alert("Too many robots. Stop clicking please.")
-          warning_3 = false;
-        }
-        if(warning_4 && num_bots > 140) {
-          alert("Due to your inability to follow instructions and stop creating more robots, the site will now be refreshed.")
-          warning_4 = false;
-          localStorage.setItem('warned__already', true);
-          location.assign("https://www.joseph-ma.com");
-        }
+      if(warning_1 && num_bots > 40) {
+        alert(alert_1[Math.floor(Math.random() * alert_1.length)]);
+        warning_1 = false;
       }
-      else {
-        localStorage.removeItem('warned__already');
-        if(warning_1 && num_bots > 40) {
-          alert("Trying to make more robots... again? I feel like we've gone through this before.");
-          warning_1 = false;
-        }
-        if(warning_2 && num_bots > 80) {
-          alert("Remember what happened the last time you made too many robots?")
-          warning_2 = false;
-        }
-        if(warning_3 && num_bots > 120) {
-          alert("This is a new level of persistence.")
-          warning_3 = false;
-        }
-        if(warning_4 && num_bots > 140) {
-          alert("That's enough.")
-          warning_4 = true;
-          localStorage.removeItem(warned__already);
-          location.assign("https://www.joseph-ma.com");
-        }
+      if(warning_2 && num_bots > 80) {
+        alert(alert_2[Math.floor(Math.random() * alert_2.length)])
+        warning_2 = false;
+      }
+      if(warning_3 && num_bots > 120) {
+        alert(alert_3[Math.floor(Math.random() * alert_3.length)])
+        warning_3 = false;
+      }
+      if(warning_4 && num_bots > 140) {
+        alert(alert_4[Math.floor(Math.random() * alert_4.length)])
+        warning_4 = false;
+        location.assign("https://www.joseph-ma.com");
       }
       
 

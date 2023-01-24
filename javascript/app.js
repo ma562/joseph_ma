@@ -21,7 +21,6 @@ else if (screen.width >= 700) {
 else {
   size_val = 28;
 }
-console.log(particlesJS.particles)
 
 particlesJS('particles-js',
   
