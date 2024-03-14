@@ -40,7 +40,7 @@ $(document).ready(function(){
 		margin: 20,
 		loop: true,
 		autoplay: true,
-		autoplayTimeout: 3500,
+		autoplayTimeout: 2300,
 		autoplayHoverPause: true,
 
 		responsive: {
