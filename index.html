@@ -10,9 +10,9 @@
 	<link rel="icon" href="images/jm.png">
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> -->
 	
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LB0RLKPKCN"></script>
@@ -28,7 +28,7 @@
 <body>
 	<nav class = "navbar">
 		<div class = "max-width">
-			<div class = "theme_list">
+<!-- 			<div class = "theme_list">
 				<div class = "x">
 					<i class="fa-solid fa-bars active"></i>
 				</div>
@@ -41,9 +41,8 @@
 					<li class = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
 					<li class = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
 					<li class = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li><br>
-					<!-- <li class = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li> -->
 				</ul>
-			</div>
+			</div> -->
 			<div class = "memory_list">
 				<div class = "x2">
 					<i class="fa-solid fa-bars active"></i>
@@ -53,16 +52,17 @@
 					<!-- <li class = "summer22"><a href = "https://joseph-ma.com/">Summer 22'</a></li><br> -->
 					<li class = "fall22"><a href = "https://joseph-ma.com/">Fall 22'</a></li><br>
 					<li class = "spring23"><a href = "https://joseph-ma.com/">Spring 23'</a></li><br>
-					<li class = "fall23"><a href = "https://joseph-ma.com/">Fall 23'</a></li>
+					<li class = "fall23"><a href = "https://joseph-ma.com/">Fall 23'</a></li><br>
+					<li class = "spring24"><a href = "https://joseph-ma.com/">Spring 24'</a></li>
 				</ul>
 			</div>
-			<div class = "logo"><a href="#">Joseph's <span>Portfolio</a></div>
+			<div class = "logo"><a href="https://joseph-ma.com/">Joseph's <span>Portfolio</a></div>
 
 			<ul class = "menu">
-				<li class = "original_button"><a href="https://joseph-ma.com/">Home</a></li>
+				<li class = "original_button"><a href="#">Home</a></li>
 				<li class = "original_button"><a href="#about">About</a></li>
 				<li class = "original_button"><a href="#projects">Projects</a></li>
-				<li><a class = "themes">Themes</a>
+<!-- 				<li><a class = "themes">Themes</a>
 					<div class = "theme">
 						<ul>
 							<li class = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
@@ -72,7 +72,6 @@
 							<li class = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
 							<li class = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
 							<li class = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li>
-							<!-- <li class = "grade_calculator"><a href = "https://joseph-ma.com/">Grade Calculator</a></li> -->
 						</ul>
 					</div>
 					<script>
@@ -91,7 +90,7 @@
 							});
 						}
 					</script>
-				</li>
+				</li> -->
 
 				<li><a class = "mems">Memories</a>
 					<div class = "memories">
@@ -99,11 +98,12 @@
 							<!-- <li class = "summer22"><a href = "https://joseph-ma.com/">Summer 22'</a></li><br> -->
 							<li class = "fall22"><a href = "https://joseph-ma.com/">Fall 22'</a></li><br>
 							<li class = "spring23"><a href = "https://joseph-ma.com/">Spring 23'</a></li><br>
-							<li class = "fall23"><a href = "https://joseph-ma.com/">Fall 23'</a></li>
+							<li class = "fall23"><a href = "https://joseph-ma.com/">Fall 23'</a></li><br>
+							<li class = "spring24"><a href = "https://joseph-ma.com/">Spring 24'</a></li>
 						</ul>
 						<script>
 							//MEMORY SELECTOR
-							const my_memories = ["fall22", "spring23", "fall23"]
+							const my_memories = ["fall22", "spring23", "fall23", "spring24"]
 							const memory_list = new Array(my_memories.length)
 
 							for(let i = 0; i < my_memories.length; i++) {
@@ -135,11 +135,11 @@
 				function handleMediaQueryChange(mediaQuery) {
 				  if (mediaQuery.matches) {
 				    // add the event listener using a named function
-				    theme_button.addEventListener('click', handleClick);
+				    //theme_button.addEventListener('click', handleClick);
 				    memory_button.addEventListener('click', handleClick2);
 				  } else {
 				    // remove the event listener using the same named function
-				    theme_button.removeEventListener('click', handleClick);
+				    //theme_button.removeEventListener('click', handleClick);
 				    memory_button.removeEventListener('click', handleClick2);
 				  }
 				}
@@ -162,9 +162,9 @@
 				handleMediaQueryChange(mediaQuery);
 
 				//X BUTTON FORMATTER
-				const x_button = document.querySelector(".x");
+				// const x_button = document.querySelector(".x");
 				const x2_button = document.querySelector(".x2");
-				x_button.addEventListener('click', closeTheme);
+				//x_button.addEventListener('click', closeTheme);
 				x2_button.addEventListener('click', closeMemory);
 
 				const theme_element2 = document.querySelector(".theme_list");
@@ -183,10 +183,10 @@
 				const element1 = document.querySelector('.menu-btn');
 				const rect = element1.getBoundingClientRect();
 
-				const element2 = document.querySelector('.x');
+				// const element2 = document.querySelector('.x');
 				const element3 = document.querySelector('.x2');
-				element2.style.left = `${rect.left}px`;
-				element2.style.top = `${rect.top}px`;
+				// element2.style.left = `${rect.left}px`;
+				// element2.style.top = `${rect.top}px`;
 				element3.style.left = `${rect.left}px`;
 				element3.style.top = `${rect.top}px`;
 
@@ -194,10 +194,10 @@
 				  const element1 = document.querySelector('.menu-btn');
 				  const rect = element1.getBoundingClientRect();
 
-				  const element2 = document.querySelector('.x');
+				  // const element2 = document.querySelector('.x');
 				  const element3 = document.querySelector('.x2');
-				  element2.style.left = `${rect.left}px`;
-				  element2.style.top = `${rect.top}px`;
+				  // element2.style.left = `${rect.left}px`;
+				  // element2.style.top = `${rect.top}px`;
 				  element3.style.left = `${rect.left}px`;
 				  element3.style.top = `${rect.top}px`;
 				});
@@ -229,10 +229,10 @@
 				</div>
 				<div class = "column right">
 					<div class = "text">Hello there. I'm Joseph!</div>
-					<p>I am currently pursuing my master's degree in Electrical and Computer Engineering at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b>. Throughout my studies, I have found enjoyment in the perfect blend of electrical engineering and computer science that this program offers. Inspirations from content creators like <b><a href = "https://www.youtube.com/c/Electroboom" target = "blank">ElectroBOOM</a></b> and <b><a href = "https://www.youtube.com/watch?v=UwsrzCVZAb8&ab_channel=YouTubeOriginals" target = "_blank">The Age of A.I.</a></b> have further fueled my passion for this field. My interests span across a wide range of areas, including data structures and algorithms, full stack web development, embedded systems, digital design, machine learning, artificial intelligence, and robotics. If you're curious to explore my past projects, feel free to visit the Projects section of my portfolio, where you'll find detailed information and demonstrations of <b><a href="#projects">12 completed projects</a></b>, with more exciting ones in progress. <br><br>
+					<p>I am currently pursuing my master's degree in Electrical and Computer Engineering at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b>. Throughout my studies, I have found enjoyment in the perfect blend of electrical engineering and computer science that this program offers. Inspirations from content creators like <b><a href = "https://www.youtube.com/c/Electroboom" target = "blank">ElectroBOOM</a></b> and <b><a href = "https://www.youtube.com/watch?v=UwsrzCVZAb8&ab_channel=YouTubeOriginals" target = "_blank">The Age of A.I.</a></b> have further fueled my passion for this field. My interests span across a wide range of areas, including data structures and algorithms, full stack web development, embedded systems, digital design, machine learning, artificial intelligence, and robotics. If you're curious to explore my past projects, feel free to visit the Projects section of my portfolio, where you'll find detailed information and demonstrations of <b><a href="#projects">13 completed projects</a></b>, with more exciting ones in progress. <br><br>
 					I'm currently serving as a <b>Graduate Teaching Assistant</b> for <b>ECE 362: Microprocessor Systems and Interfacing</b> where we work with <b>embedded systems</b>. Aside from this, I'm investigating applications in <b>Deep Reinforcement Learning</b> which stems from my two most recent projects: <b>Neural Network Architecture from Scratch</b> and <b>Cat and Mouse 2: Reinforcement Learning</b>. 
 
-					<br><br>Beyond academics, I find joy in activities such as biking, swimming (I've also previously worked as a lifeguard), cooking, watching movies, playing Valorant/Overwatch, and expressing my creativity through digital art. To explore my artistic endeavors further, feel free to visit the <b>Themes</b> and <b>Memories</b> section, where you can discover more and even <b>set a new homepage background</b>.</p>
+					<br><br>Beyond academics, I find joy in activities such as biking, swimming (I've also previously worked as a lifeguard), cooking, watching movies, playing Valorant/Overwatch, and expressing my creativity through digital art. To explore my artistic endeavors further, feel free to visit the <b>Memories</b> section, where you can discover more and even <b>set a new homepage background</b>.</p>
 					<br>
 					<p>Want to collab on a project or have any questions? Feel free to contact me.</p>
 					<div class = "icon-box">
@@ -331,194 +331,332 @@
 	</section>
 	<!-- projects -->
 	<section class = "projects" id = "projects">
-		<div class = "max-width">
-			<div class = "text">--Projects--</div><br>
-			<div class = "carousel owl-carousel">
-				<a href = "https://ma562.github.io/joseph_ma-neural_networks/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Neural Networks from SCRATCH</b></div>
-							<b>--Individual--</b>
-							<img src = "images/neural.png" alt = "">
-							<br>
-							<p>Designed and built a neural network to implement deep learning from scratch (just with NumPy and Python) able to categorize data sets such as MNIST with close to 90% accuracy and above. Step by step hand calculations included!<br><br><br></p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/dijkstra-vs-q-learning-demo/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Cat & Mouse 2: <br> Reinforcement Learning</b></div>
-							<b>--Individual--</b>
-							<img src = "images/rl.png" alt = "">
-							<br>
-							<p>Developed a multi-agent training environment w/ Q-learning, an off policy RL algorithm. This is a sequel to Cat and Mouse where this time, the cat and mouse are able to learn to play against each other!<br><br><br></p>
-						</div>
-					</div>
-				</a>
-				<a href = "#projects">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Differential Cryptoanalysis</b></div>
-							<b>--Individual--</b>
-							<img src = "images/diffrential_crypto.png" alt = "">
-							<br>
-							<p>Coming soon.<br><br><br></p>
-						</div>
-					</div>
-				</a>
-				<a href = "#projects">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Boiler Ticket Chain</b></div>
-							<b>--Group--</b>
-							<img src = "images/meta_mask.png" alt = "">
-							<br>
-							<p>Coming soon.<br><br><br></p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-goodnight_light/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Goodnight Light</b></div>
-							<b>--Individual--</b>
-							<img src = "images/gdnight_light.PNG" alt = "">
-							<br>
-							<p>Created a PCB circuit schematic/board layout on Autodesk EAGLE and soldered on components. Final product was a device that turned on/off an LED based on how much light was detected in the environment.</p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/-joseph_ma-wordle_solver/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Wordle Solver</b></div>
-							<b>--Individual--</b>
-							<img src = "images/wordle.png" alt = "">
-							<br>
-							<p>Wrote a program with Python and Pandas to solve Wordle puzzles for words of any length efficiently while evaluating all conditions provided by the game.</p>
-							<br><br>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-cat_mouse/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Cat & Mouse</b></div>
-							<b>--Group--</b>
-							<img src = "images/cat_mouse.png" alt = "">
-							<br>
-							<p>A game boy programmed in C using the STM32 ARM microcontroller. Utilized SPI, ADC, DAC and GPIO for hardware operation. Cat was programmed to autonomously chase the mouse. Design was finalized with a PCB.</p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma_k_means/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Raw K-means Clustering</b></div>
-							<b>--Individual--</b>
-							<img src = "images/k_means.png" alt = "">
-							<br>
-							<p>Wrote an algorithm to illustrate unsupervised machine learning on python in both 1 and 2 dimensions without the help of any machine learning libraries.</p>
-							<br><br>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma_gyro_controlled_arm/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Gyroscope Controlled Arm</b></div>
-							<b>--Individual--</b>
-							<img src = "images/arm2.jpg" alt = "">
-							<br>
-							<p>Built a robotic arm out of popsicle sticks/MG966R servo motors and used Arduino software to calibrate them to GY-521 gyroscope accelerometers which allowed for the robotic arm to mimic the movements of a human arm.</p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-stark_tower/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Stark Tower</b></div>
-							<b>--Individual--</b>
-							<img src = "images/stark8.PNG" alt = "">
-							<br>
-							<p>A detailed CAD model of Stark Tower created and designed on CATIA V5. 3D printed with PLA afterwards.</p>
-							<br><br><br><br>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-audio_equalizer/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Audio Equalizer</b></div>
-							<b>--Individual--</b>
-							<img src = "images/audio_eq1.png" alt = "">
-							<br>
-							<p>Designed and constructed an audio equalizer comprising of filters and operational amplifiers to isolate and magnify signals at bass, mid and treble frequencies.</p>
-							<br><br>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma_mutlivariate_grade_calculator/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Multivariate Grade Calculator</b></div>
-							<b>--Individual--</b>
-							<img src = "images/grade_calc.png" alt = "">
-							<br>
-							<p>Not an ordinary grade calculator. One of my first sites created. Written in pure HTML, CSS, JS with no frameworks. Responsive design still in development.</p>
-							<br><br>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma_weight_amplifier_comparator/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Weight Amplifier & Comparator</b></div>
-							<b>--Group--</b>
-							<img src = "images/mass_amplifier.PNG" alt = "">
-							<br>
-							<p>Codesigned a filtration system to assist Kimberly-Clark in differentiating paper towels from other waste with accurate results and a high success rate. Final product was created with Autodesk Fusion 360.</p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-cnc_machined_hammer/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>CNC Machined Hammer</b></div>
-							<b>--Individual--</b>
-							<img src = "images/cnc.png" alt = "">
-							<br>
-							<p>Programmed and generated G-code on Vericut software for CNC simulation. Final product was machined on Hurco CNC machine. </p>
-							<br><br><br>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-enzyme_data_analysis/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Enzyme Data Analysis</b></div>
-							<b>--Group--</b>
-							<img src = "images/michaelis_img.png" alt = "">
-							<br>
-							<p>Codesigned and implemented an algorithm to analyze data to model the Michaelis Menten curve yielding surprisingly accurate results. Data was extracted from Excel and algorithm was written and implemented on MATLAB.</p>
-						</div>
-					</div>
-				</a>
-				<a href = "https://ma562.github.io/joseph_ma-security_alarm_sensor-/">
-					<div class = "card">
-						<div class = "box">
-							<div class = "text"><b>Security Alarm Sensor</b></div>
-							<b>--Group--</b>
-							<img src = "images/jw security.jpg" alt = "">
-							<br>
-							<p>Codesigned and programmed a security alarm sensor with a PLC. Utilized diffused photoelectric sensor and inductive sensor for detection. Flowchart logic was implemented on nanoNavigator and design was prototyped in SolidWorks.</p>
-						</div>
-					</div>
-				</a>
-			</div>
+<!-- 		<div class = "max-width"> -->
+			<!-- <div class = "text">PROJECTS</div><br> -->
+			<div class="carousel">
+        <div class="list">
+        	<div class="item">
+                <img src="images/gyro.png">
+                <div class="introduce">
+                    <div class="title">ROBOTICS</div>
+                    <div class="topic">Gyroscope Controlled Arm</div>
+                    <div class="des">
+                        Built a robotic arm out of popsicle sticks/MG966R servo motors and used Arduino software to calibrate them to GY-521 gyroscope accelerometers which allowed for the robotic arm to mimic the movements of a human arm.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Gyroscope Controlled Arm</div>
+                    <div class="des">
+                        This project involves constructing a robotic arm from popsicle sticks, controlled by an Arduino Mega 2560 and programmed using the Arduino Software (IDE). The arm's movements are finely tuned through a GY-521 MPU6050 module, which integrates an accelerometer and gyroscope to accurately map the servo motors' positions. A Hall Effect Sensor is also employed to enable the gripper to respond to magnetic fields, enhancing the arm’s interactive capabilities.
+                    </div>
+                    
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_gyro_controlled_arm/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/catmouse.png">
+                <div class="introduce">
+                    <div class="title">EMBEDDED SYSTEMS</div>
+                    <div class="topic">Cat and Mouse</div>
+                    <div class="des">
+                        A game boy programmed in C using the STM32 ARM microcontroller. Utilized SPI, ADC, DAC and GPIO for hardware operation. Cat was programmed to autonomously chase the mouse using Dijkstra's algorithm. Design was finalized with a PCB.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">GROUP PROJECT</div>
+                    <div class="title">Cat and Mouse</div>
+                    <div class="des">
+                        The Cat and Mouse project is an advanced interactive electronics project featuring a custom-designed PCB integrated with an STM32F091RCT6 ARM microcontroller, a 3.2" ILI9341 TFT LCD touchscreen, and audio output capabilities. Utilizing Dijkstra’s algorithm, the game dynamically calculates the path of an AI-controlled cat seeking the user-directed mouse within a maze. The project employs SPI for efficient LCD communication, along with ADC and DAC for touchscreen interfacing and audio management respectively.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cat_mouse/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/catmouse2.png">
+                <div class="introduce">
+                    <div class="title">MACHINE LEARNING</div>
+                    <div class="topic">Cat and Mouse 2: Reinforcement Learning</div>
+                    <div class="des">
+                        This project brings the Cat and Mouse project to another level by training the cat and mouse with reinforcement learning to interact against each other. Initially, the cat uses Dijkstra's algorithm, but both are later trained with Q-learning. Users can design custom maps and train mice against an upgraded cat equipped with A* pathfinding.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Cat and Mouse 2: Reinforcement Learning</div>
+                    <div class="des">
+                        This sequel to the Cat and Mouse project uses RL and tabular Q-learning within a Markov Decision Process to train the cat and mouse. Initially, both the cat and mouse are trained against each other, with generational training improving their strategies. A user interface was built to allow users to design custom maps and train mice against an upgraded cat equipped with A* for faster pathfinding. A double depth-first search (DFS) algorithm memoizes dead-end spots, speeding up the mouse's learning and accounting for edge cases. This project has applications in autonomous vehicle navigation, police/criminal car pursuits, navigating dangerous environments (e.g., environmental disasters, wildlife areas), and military encounters.
+                    </div>
+                    <div class="actions">
+                        <!-- <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cat_mouse/" target = "_blank">VIEW BLOG POST</a></button> -->
+                        <button class="checkout" onclick="alert('Still a work in progress! Come back in a couple weeks. On the brightside, the user interface is ready and available for you to try out - Click TRY IT OUT (only available on Desktop)')">VIEW BLOG POST</button>
+                        <button class = "tryout"> <a href = "https://ma562.github.io/joseph_ma_cat_mouse_config/" target = "_blank">TRY IT OUT</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/neuralnet.png">
+                <div class="introduce">
+                    <div class="title">MACHINE LEARNING</div>
+                    <div class="topic">Neural Network Architecture</div>
+                    <div class="des">
+                        Built a neural network from scratch by hand-deriving and implementing all calculations, including matrix multiplications, forward and backward propagation, gradient descent, and partial differentials for adjusting weights and biases. The entire algorithm was then written in Python using only NumPy and successfully applied to datasets like MNIST.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Neural Network Architecture</div>
+                    <div class="des">
+                        Neural networks often seem like a black box. This project opens the box by constructing one from scratch. Every calculation and algorithm was hand-derived, including matrix multiplications for passing data through layers, forward propagation for neuron activations via weighted sums and activation functions, and deriving gradients of the loss function through backward propagation using the chain rule. Gradient descent iteratively updated the network's weights, minimizing the loss function with hand-derived gradients. Partial differentials were calculated to find the derivatives of the loss function with respect to each weight and bias. The entire neural network was coded from scratch using only NumPy for matrix operations. This hands-on approach successfully trained and tested the network on the MNIST dataset, offering a solid introduction to deep learning.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-neural_networks/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/word.png">
+                <div class="introduce">
+                    <div class="title">DATA SCIENCE</div>
+                    <div class="topic">Wordle Solver</div>
+                    <div class="des">
+                        A Python-based Wordle solver that leverages the Pandas library to efficiently filter and suggest optimal guesses based on color-coded feedback from the game.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                    <div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Wordle Solver</div>
+                    <div class="des">
+                        This Python-based Wordle solver utilizes the Pandas library to create an effective game-solving environment by maintaining a database of potential words and dynamically updating this list based on user input. The solver interprets color-coded feedback to adjust the list of possible words, applying logical conditions: removing words that don't match green and yellow criteria and excluding letters indicated by gray unless they appear as yellow or green elsewhere in the word. It also performs statistical analysis to determine the most informative starting word by calculating the frequency and placement of letters in remaining words after each round. Through this analysis, I identified the best and worst opening guesses for Wordle; the top 25 and worst 25 opening guesses are detailed in my blog post.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/-joseph_ma-wordle_solver/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/goodnight.png">
+                <div class="introduce">
+                    <div class="title">ELECTRONICS DESIGN</div>
+                    <div class="topic">Goodnight Light</div>
+                    <div class="des">
+                        Designed and created a PCB circuit schematic/board layout on Autodesk EAGLE and soldered on components. Final product was a device that turned on/off an LED based on how much light was detected in the environment.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                    <div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Goodnight Light</div>
+                    <div class="des">
+                        The Goodnight Light is an innovative lighting solution designed using Autodesk EAGLE, featuring a circuit that utilizes an LM358 operational amplifier as a comparator to control an LED based on ambient light. The circuit adjusts the LED's state through a high-impedance voltage divider system, where a photoresistor alters its resistance in response to light levels, toggling the LED on in darkness and off in light. This setup ensures energy-efficient operation and offers a practical application in environments where automatic lighting adjustments are beneficial, such as in bedrooms or hallways.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-goodnight_light/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/kmeans.png">
+                <div class="introduce">
+                    <div class="title">MACHINE LEARNING</div>
+                    <div class="topic">K-means Clustering: A Visualization</div>
+                    <div class="des">
+                        Wrote an algorithm to illustrate unsupervised machine learning on python in both 1 and 2 dimensions without the help of any machine learning libraries.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">K-means Clustering: A Visualization</div>
+                    <div class="des">
+                        This project written in Python utilizes the random library to generate coordinates and Matplotlib to visualize the process of K-means clustering. The program plots 120 points on a 100x100 coordinate plane and groups them into six clusters by calculating distances to dynamically repositioned centroids. This visualization serves to demonstrate the K-means algorithm, a machine learning method that optimizes clustering based on minimizing distances within each cluster.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_k_means/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/starker.png">
+                <div class="introduce">
+                    <div class="title">COMPUTER-AIDED DESIGN</div>
+                    <div class="topic">Stark Tower</div>
+                    <div class="des">
+                        A detailed CAD model of Stark Tower created and designed on CATIA V5. 3D printed with PLA afterwards.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Stark Tower</div>
+                    <div class="des">
+                        This CAD model of Stark Tower, inspired by the Avengers movies, is created in CATIA V5 after closely studying images of the iconic building and later printed in PLA. The design is divided into five main components: the roof, circular balcony, Stark display, main body, and bottom base, each showcasing detailed CAD modeling techniques. The model is not to scale, but captures the essence of Stark Tower—download the STL file if you're interested in 3D printing your own version.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-stark_tower/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/audio.png">
+                <div class="introduce">
+                    <div class="title">ELECTRONICS DESIGN</div>
+                    <div class="topic">Audio Equalizer</div>
+                    <div class="des">
+                        Designed and constructed an audio equalizer comprising of filters and operational amplifiers to isolate and magnify signals at bass, mid and treble frequencies.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                    <div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Audio Equalizer</div>
+                    <div class="des">
+                        The project focused on building an audio equalizer system capable of fine-tuning bass, mid, and treble frequencies within an input signal. By employing low-pass, high-pass, and band-pass filters, the signal was divided into distinct frequency bands. Operational amplifiers, along with potentiometers serving as adjustable feedback resistors, enabled users to control the scaling and gain of each frequency band. Component values were carefully calculated to meet specific output voltage requirements across various EQ settings and frequencies. 
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-audio_equalizer/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/weight_amp.png">
+                <div class="introduce">
+                    <div class="title">ENVIRONMENTAL ENGINEERING</div>
+                    <div class="topic">Weight Amplifier & Comparator</div>
+                    <div class="des">
+                        Developed a waste differentiation system using the weight amplifier and comparator to distinguish paper towels from other waste based on their absorbent properties. This system measures the weight gain after soaking waste with water to accurately sort paper towels for recycling, significantly reducing landfill contributions.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                    <div class="project-type">GROUP PROJECT</div>
+                    <div class="title">Weight Amplifier & Comparator</div>
+                    <div class="des">
+                        Developed a waste differentiation system using the weight amplifier and comparator to sort paper towels from other waste based on their absorbent properties. The system detects, compresses, weighs, soaks, and reweighs waste, calculating the gain (AW) as the weight ratio before and after soaking. High AW values indicate paper towels, which are then sorted for recycling. Initial tests showed high accuracy, highlighting the system's potential to improve recycling efforts and reduce landfill contributions.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_weight_amplifier_comparator/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/security.png">
+                <div class="introduce">
+                    <div class="title">EMBEDDED SYSTEMS</div>
+                    <div class="topic">Security Alarm Sensor</div>
+                    <div class="des">
+                        Codesigned and programmed a security alarm sensor with a PLC. Utilized diffused photoelectric sensor and inductive sensor for detection. Flowchart logic was implemented on nanoNavigator and design was prototyped in SolidWorks.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">GROUP PROJECT</div>
+                    <div class="title">Security Alarm Sensor</div>
+                    <div class="des">
+                        This security alarm sensor project uses nanoNavigator software and a programmable logic controller (PLC) to implement flow chart logic with simplified block code. It's designed to detect movement and identify potentially dangerous objects, utilizing inputs like a photoelectric sensor, inductive sensor, and push button, with outputs including a blue light, orange light, and buzzer. The outer casing of the device was also designed in SolidWorks
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-security_alarm_sensor-/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/enzyme.png">
+                <div class="introduce">
+                    <div class="title">MACHINE LEARNING</div>
+                    <div class="topic">Enzyme Data Analysis</div>
+                    <div class="des">
+                        Developed a model to accurately fit data of enzyme reactions, analyzed reaction velocities and substrate concentrations using the Michaelis-Menten model to find the best-fitting parameters, Vmax and Km, for five enzymes. The project involved nonlinear regression, combining algebraic methods and gradient descent to optimize accuracy.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">GROUP PROJECT</div>
+                    <div class="title">Enzyme Data Analysis</div>
+                    <div class="des">
+                        This project determined optimal parameters, Vmax and Km, for enzyme kinetics using the Michaelis-Menten equation. We analyzed five enzymes with duplicate tests, generating 10 data sets. Initial reaction velocities were calculated from substrate concentrations by determining slopes on the [P] vs. Time plot. Nonlinear regression was applied, first using algebraic methods to estimate Vmax and Km, then testing all possible parameter combinations (2025 per enzyme) to minimize Sum of Squared Errors (SSE). Gradient descent refined these parameters by exploring ±10% variations, ensuring convergence to global minima. This comprehensive methodology accurately modeled enzyme kinetics.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-enzyme_data_analysis/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/cnc2.png">
+                <div class="introduce">
+                    <div class="title">CNC MACHINING</div>
+                    <div class="topic">CNC Machined Hammer</div>
+                    <div class="des">
+                        Generated G-code using Vericut for CNC machining and performed the final operation on a Hurco CNC machine. The project involved engraving over an area of 2.5 * 0.6 inches on a hammer head and included various commands for different machining operations, such as linear patterns and round corners.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                    <div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">CNC Machined Hammer</div>
+                    <div class="des">
+                        This project involved generating G-code for CNC machining using Vericut and performing the final operation on a Hurco CNC machine to engrave a hammer head over an area of 2.5 * 0.6 inches. The initial G-code was written in a text file and then uploaded to Vericut for simulation. Commands included setting the reference zero origin, loading tools, starting the spindle at specific RPMs, and executing rapid traverse motions. Linear motions and radial arcs were used to create patterns and engravings with precise feed rates. Toolpaths were designed for linear patterns and round corners, requiring careful adjustments to ensure accurate engravings. The final design featured the Avengers logo and my initials on each side of the hammer head.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cnc_machined_hammer/" target = "_blank">VIEW BLOG POST</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/gcalculator.png">
+                <div class="introduce">
+                    <div class="title">WEB DEVELOPMENT</div>
+                    <div class="topic">Multivariate Grade Calculator</div>
+                    <div class="des">
+                        My first web dev project. The Multivariate Grade Calculator is a web-based application built with HTML, CSS, and JavaScript, designed to dynamically calculate and visualize academic performance across various assessments.
+                    </div>
+                    <button class="seeMore">VIEW PROJECT</button>
+                </div>
+                <div class="detail">
+                	<div class="project-type">INDIVIDUAL PROJECT</div>
+                    <div class="title">Multivariate Grade Calculator</div>
+                    <div class="des">
+                        The Multivariate Grade Calculator began as a Python-based tool using Matplotlib and object-oriented programming to manage and analyze grades and evolved into a web-based application built with HTML, CSS, and JavaScript. It offers a dynamic user interface that updates in real time to reflect changes in assessment data, maintaining user data across sessions via local storage. Interactive elements like sliders allow users to adjust potential scores, and a unique Grade Thermometer visually represents the maximum and minimum achievable grades based on current inputs. This enables students to strategically prioritize certain assessments over others, depending on their impact on the final grade, thus optimizing their academic efforts for the best possible outcomes. <b>(Responsive version is still in development)</b>.
+                    </div>
+                    <div class="actions">
+                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_mutlivariate_grade_calculator/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class = "tryout"> <a href = "https://ma562.github.io/grade_calculator/" target = "_blank">TRY IT OUT</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">GO BACK</button>
+        </div>
+	    </div>
 			</section>
-		</div>
+<!-- 		</div> -->
 	</section>
 
 	<div class = "info" id = "info">
@@ -529,6 +667,7 @@
 	<script src="javascript/app.js"></script>
 	<script src ="javascript/script.js"></script>
 	<script src = "javascript/background_picker.js"></script>
+	<script src = "javascript/crap.js"></script>
 </body>
 
 </html>
