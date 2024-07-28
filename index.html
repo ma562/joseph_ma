@@ -62,35 +62,6 @@
 				<li class = "original_button"><a href="#">Home</a></li>
 				<li class = "original_button"><a href="#about">About</a></li>
 				<li class = "original_button"><a href="#projects">Projects</a></li>
-<!-- 				<li><a class = "themes">Themes</a>
-					<div class = "theme">
-						<ul>
-							<li class = "cat_mouse"><a href = "https://joseph-ma.com/">Cat & Mouse</a></li><br>
-							<li class = "gyro_arm"><a href = "https://joseph-ma.com/">Gyro Arm</a></li><br>
-							<li class = "wordle_solver"><a href = "https://joseph-ma.com/">Wordle Solver</a></li><br>
-							<li class = "stark_tower"><a href = "https://joseph-ma.com/">Stark Tower</a></li><br>
-							<li class = "security_alarm"><a href = "https://joseph-ma.com/">Security Alarm</a></li><br>
-							<li class = "weight_amplifier"><a href = "https://joseph-ma.com/">Weight Amplifier</a></li><br>
-							<li class = "cnc_hammer"><a href = "https://joseph-ma.com/">CNC Hammer</a></li>
-						</ul>
-					</div>
-					<script>
-						//THEME SELECTOR
-						const my_themes = ["security_alarm", "wordle_solver", "weight_amplifier", "cat_mouse", 
-						"stark_tower", "cnc_hammer", "gyro_arm"] //, "grade_calculator"]
-						const theme_list = new Array(my_themes.length)
-
-						for(let i = 0; i < my_themes.length; i++) {
-							theme_list[i] = document.querySelectorAll("." + my_themes[i]);
-							theme_list[i].forEach(element => {
-							  element.addEventListener('click', () => {
-							    localStorage.setItem("my__background", parseInt(i + 1));
-							    localStorage.setItem("is__theme", 1);
-							  });
-							});
-						}
-					</script>
-				</li> -->
 
 				<li><a class = "mems">Memories</a>
 					<div class = "memories">
@@ -229,10 +200,10 @@
 				</div>
 				<div class = "column right">
 					<div class = "text">Hello there. I'm Joseph!</div>
-					<p>I am currently pursuing my master's degree in Electrical and Computer Engineering at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b>. Throughout my studies, I have found enjoyment in the perfect blend of electrical engineering and computer science that this program offers. Inspirations from content creators like <b><a href = "https://www.youtube.com/c/Electroboom" target = "blank">ElectroBOOM</a></b> and <b><a href = "https://www.youtube.com/watch?v=UwsrzCVZAb8&ab_channel=YouTubeOriginals" target = "_blank">The Age of A.I.</a></b> have further fueled my passion for this field. My interests span across a wide range of areas, including data structures and algorithms, full stack web development, embedded systems, digital design, machine learning, artificial intelligence, and robotics. If you're curious to explore my past projects, feel free to visit the Projects section of my portfolio, where you'll find detailed information and demonstrations of <b><a href="#projects">13 completed projects</a></b>, with more exciting ones in progress. <br><br>
-					I'm currently serving as a <b>Graduate Teaching Assistant</b> for <b>ECE 362: Microprocessor Systems and Interfacing</b> where we work with <b>embedded systems</b>. Aside from this, I'm investigating applications in <b>Deep Reinforcement Learning</b> which stems from my two most recent projects: <b>Neural Network Architecture from Scratch</b> and <b>Cat and Mouse 2: Reinforcement Learning</b>. 
+					<p>I am currently pursuing my master's degree in Electrical and Computer Engineering at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b>. Throughout my studies, I have found enjoyment in the perfect blend of electrical engineering and computer science. Inspirations from content creators like <b><a href = "https://www.youtube.com/c/Electroboom" target = "blank">ElectroBOOM</a></b> and <b><a href = "https://www.youtube.com/watch?v=UwsrzCVZAb8&ab_channel=YouTubeOriginals" target = "_blank">The Age of A.I.</a></b> have further fueled my passion for this field. My interests span across a wide range of areas, including data structures and algorithms, full stack web development, embedded systems, digital design, machine learning, artificial intelligence, and robotics. If you're curious to explore my past projects, feel free to visit the Projects section of my portfolio, where you'll find detailed information and demonstrations of <b><a href="#projects">13 completed projects</a></b>, with more exciting ones in progress. <br><br>
+					Most recently I've been serving as a <b>Graduate Teaching Assistant</b> for <b>ECE 362: Microprocessor Systems and Interfacing</b> where we work with <b>embedded systems</b>. Aside from this, I'm investigating applications in <b>Deep Reinforcement Learning</b> which stems from my two most recent projects: <b>Neural Network Architecture from Scratch</b> and <b>Cat and Mouse 2: Reinforcement Learning</b>. 
 
-					<br><br>Beyond academics, I find joy in activities such as biking, swimming (I've also previously worked as a lifeguard), cooking, watching movies, playing Valorant/Overwatch, and expressing my creativity through digital art. To explore my artistic endeavors further, feel free to visit the <b>Memories</b> section, where you can discover more and even <b>set a new homepage background</b>.</p>
+					<br><br>Beyond academics, I find joy in activities such as biking, swimming (I've also previously worked as a lifeguard), cooking, watching movies, playing Valorant/Overwatch, and expressing my creativity through digital art + UI/UX design. To explore my artistic endeavors further, feel free to visit the <b>Memories</b> section, where you can discover more and even <b>set a new homepage background</b>.</p>
 					<br>
 					<p>Want to collab on a project or have any questions? Feel free to contact me.</p>
 					<div class = "icon-box">
@@ -353,7 +324,7 @@
                     </div>
                     
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_gyro_controlled_arm/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma_gyro_controlled_arm/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -374,7 +345,10 @@
                         The Cat and Mouse project is an advanced interactive electronics project featuring a custom-designed PCB integrated with an STM32F091RCT6 ARM microcontroller, a 3.2" ILI9341 TFT LCD touchscreen, and audio output capabilities. Utilizing Dijkstra’s algorithm, the game dynamically calculates the path of an AI-controlled cat seeking the user-directed mouse within a maze. The project employs SPI for efficient LCD communication, along with ADC and DAC for touchscreen interfacing and audio management respectively.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cat_mouse/" target = "_blank">VIEW BLOG POST</a></button>
+                        <!-- <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cat_mouse/" target = "_blank">VIEW BLOG POST</a></button> -->
+                        <!-- <button class="checkout" onclick="location.href='https://ma562.github.io/joseph_ma-cat_mouse/';" target="_blank">VIEW BLOG POST</button> -->
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-cat_mouse/', '_blank')">VIEW BLOG POST</button>
+
                     </div>
                 </div>
             </div>
@@ -398,7 +372,10 @@
                     <div class="actions">
                         <!-- <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cat_mouse/" target = "_blank">VIEW BLOG POST</a></button> -->
                         <button class="checkout" onclick="alert('Still a work in progress! Come back in a couple weeks. On the brightside, the user interface is ready and available for you to try out - Click TRY IT OUT (only available on Desktop)')">VIEW BLOG POST</button>
-                        <button class = "tryout"> <a href = "https://ma562.github.io/joseph_ma_cat_mouse_config/" target = "_blank">TRY IT OUT</a></button>
+
+                        <!-- <button class = "tryout"> <a href = "https://ma562.github.io/joseph_ma_cat_mouse_config/" target = "_blank">TRY IT OUT</a></button> -->
+
+                        <button class="tryout" onclick="window.open('https://ma562.github.io/joseph_ma_cat_mouse_config/', '_blank')">TRY IT OUT</button>
                     </div>
                 </div>
             </div>
@@ -420,7 +397,7 @@
                         Neural networks often seem like a black box. This project opens the box by constructing one from scratch. Every calculation and algorithm was hand-derived, including matrix multiplications for passing data through layers, forward propagation for neuron activations via weighted sums and activation functions, and deriving gradients of the loss function through backward propagation using the chain rule. Gradient descent iteratively updated the network's weights, minimizing the loss function with hand-derived gradients. Partial differentials were calculated to find the derivatives of the loss function with respect to each weight and bias. The entire neural network was coded from scratch using only NumPy for matrix operations. This hands-on approach successfully trained and tested the network on the MNIST dataset, offering a solid introduction to deep learning.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-neural_networks/" target = "_blank">VIEW BLOG POST</a></button>
+                    	<button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-neural_networks/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -442,7 +419,7 @@
                         This Python-based Wordle solver utilizes the Pandas library to create an effective game-solving environment by maintaining a database of potential words and dynamically updating this list based on user input. The solver interprets color-coded feedback to adjust the list of possible words, applying logical conditions: removing words that don't match green and yellow criteria and excluding letters indicated by gray unless they appear as yellow or green elsewhere in the word. It also performs statistical analysis to determine the most informative starting word by calculating the frequency and placement of letters in remaining words after each round. Through this analysis, I identified the best and worst opening guesses for Wordle; the top 25 and worst 25 opening guesses are detailed in my blog post.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/-joseph_ma-wordle_solver/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/-joseph_ma-wordle_solver/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -464,7 +441,7 @@
                         The Goodnight Light is an innovative lighting solution designed using Autodesk EAGLE, featuring a circuit that utilizes an LM358 operational amplifier as a comparator to control an LED based on ambient light. The circuit adjusts the LED's state through a high-impedance voltage divider system, where a photoresistor alters its resistance in response to light levels, toggling the LED on in darkness and off in light. This setup ensures energy-efficient operation and offers a practical application in environments where automatic lighting adjustments are beneficial, such as in bedrooms or hallways.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-goodnight_light/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-goodnight_light/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -486,7 +463,8 @@
                         This project written in Python utilizes the random library to generate coordinates and Matplotlib to visualize the process of K-means clustering. The program plots 120 points on a 100x100 coordinate plane and groups them into six clusters by calculating distances to dynamically repositioned centroids. This visualization serves to demonstrate the K-means algorithm, a machine learning method that optimizes clustering based on minimizing distances within each cluster.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_k_means/" target = "_blank">VIEW BLOG POST</a></button>
+
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma_k_means/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -508,7 +486,8 @@
                         This CAD model of Stark Tower, inspired by the Avengers movies, is created in CATIA V5 after closely studying images of the iconic building and later printed in PLA. The design is divided into five main components: the roof, circular balcony, Stark display, main body, and bottom base, each showcasing detailed CAD modeling techniques. The model is not to scale, but captures the essence of Stark Tower—download the STL file if you're interested in 3D printing your own version.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-stark_tower/" target = "_blank">VIEW BLOG POST</a></button>
+
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-stark_tower/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -530,7 +509,7 @@
                         The project focused on building an audio equalizer system capable of fine-tuning bass, mid, and treble frequencies within an input signal. By employing low-pass, high-pass, and band-pass filters, the signal was divided into distinct frequency bands. Operational amplifiers, along with potentiometers serving as adjustable feedback resistors, enabled users to control the scaling and gain of each frequency band. Component values were carefully calculated to meet specific output voltage requirements across various EQ settings and frequencies. 
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-audio_equalizer/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-audio_equalizer/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -552,7 +531,7 @@
                         Developed a waste differentiation system using the weight amplifier and comparator to sort paper towels from other waste based on their absorbent properties. The system detects, compresses, weighs, soaks, and reweighs waste, calculating the gain (AW) as the weight ratio before and after soaking. High AW values indicate paper towels, which are then sorted for recycling. Initial tests showed high accuracy, highlighting the system's potential to improve recycling efforts and reduce landfill contributions.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_weight_amplifier_comparator/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma_weight_amplifier_comparator/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -574,7 +553,8 @@
                         This security alarm sensor project uses nanoNavigator software and a programmable logic controller (PLC) to implement flow chart logic with simplified block code. It's designed to detect movement and identify potentially dangerous objects, utilizing inputs like a photoelectric sensor, inductive sensor, and push button, with outputs including a blue light, orange light, and buzzer. The outer casing of the device was also designed in SolidWorks
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-security_alarm_sensor-/" target = "_blank">VIEW BLOG POST</a></button>
+
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-security_alarm_sensor-/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -596,7 +576,7 @@
                         This project determined optimal parameters, Vmax and Km, for enzyme kinetics using the Michaelis-Menten equation. We analyzed five enzymes with duplicate tests, generating 10 data sets. Initial reaction velocities were calculated from substrate concentrations by determining slopes on the [P] vs. Time plot. Nonlinear regression was applied, first using algebraic methods to estimate Vmax and Km, then testing all possible parameter combinations (2025 per enzyme) to minimize Sum of Squared Errors (SSE). Gradient descent refined these parameters by exploring ±10% variations, ensuring convergence to global minima. This comprehensive methodology accurately modeled enzyme kinetics.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-enzyme_data_analysis/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-enzyme_data_analysis/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -618,7 +598,7 @@
                         This project involved generating G-code for CNC machining using Vericut and performing the final operation on a Hurco CNC machine to engrave a hammer head over an area of 2.5 * 0.6 inches. The initial G-code was written in a text file and then uploaded to Vericut for simulation. Commands included setting the reference zero origin, loading tools, starting the spindle at specific RPMs, and executing rapid traverse motions. Linear motions and radial arcs were used to create patterns and engravings with precise feed rates. Toolpaths were designed for linear patterns and round corners, requiring careful adjustments to ensure accurate engravings. The final design featured the Avengers logo and my initials on each side of the hammer head.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma-cnc_machined_hammer/" target = "_blank">VIEW BLOG POST</a></button>
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma-cnc_machined_hammer/', '_blank')">VIEW BLOG POST</button>
                     </div>
                 </div>
             </div>
@@ -640,8 +620,13 @@
                         The Multivariate Grade Calculator began as a Python-based tool using Matplotlib and object-oriented programming to manage and analyze grades and evolved into a web-based application built with HTML, CSS, and JavaScript. It offers a dynamic user interface that updates in real time to reflect changes in assessment data, maintaining user data across sessions via local storage. Interactive elements like sliders allow users to adjust potential scores, and a unique Grade Thermometer visually represents the maximum and minimum achievable grades based on current inputs. This enables students to strategically prioritize certain assessments over others, depending on their impact on the final grade, thus optimizing their academic efforts for the best possible outcomes. <b>(Responsive version is still in development)</b>.
                     </div>
                     <div class="actions">
-                        <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_mutlivariate_grade_calculator/" target = "_blank">VIEW BLOG POST</a></button>
-                        <button class = "tryout"> <a href = "https://ma562.github.io/grade_calculator/" target = "_blank">TRY IT OUT</a></button>
+                        <!-- <button class = "checkout"> <a href = "https://ma562.github.io/joseph_ma_mutlivariate_grade_calculator/" target = "_blank">VIEW BLOG POST</a></button> -->
+                        <!-- <button class = "tryout"> <a href = "https://ma562.github.io/grade_calculator/" target = "_blank">TRY IT OUT</a></button> -->
+
+                        <button class="checkout" onclick="window.open('https://ma562.github.io/joseph_ma_mutlivariate_grade_calculator/', '_blank')">VIEW BLOG POST</button>
+
+                        <button class="tryout" onclick="window.open('https://ma562.github.io/grade_calculator/', '_blank')">TRY IT OUT</button>
+
                     </div>
                 </div>
             </div>
