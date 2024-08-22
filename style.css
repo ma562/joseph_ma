@@ -1376,6 +1376,10 @@ a, a:visited {
     transform: translateY(-5px);
 }
 
+.mytext {
+    text-align: justify;
+}
+
 .text-box h2 {
     font-weight: 700;
     font-size: 18px;
