@@ -1537,6 +1537,9 @@ a, a:visited {
     .timeline .title {
         margin-bottom: 40px; /* Increase the margin-bottom to push the line down */
     }
+    .mytext {
+    text-align: left;
+    }
 }
 
 /* Section Background */
