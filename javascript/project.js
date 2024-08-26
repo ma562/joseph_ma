@@ -7,9 +7,11 @@ let backButton = document.getElementById('back');
 
 nextButton.onclick = function(){
     showSlider('next');
+    this.blur();
 }
 prevButton.onclick = function(){
     showSlider('prev');
+    this.blur();
 }
 
 // Function to hide the arrow buttons
