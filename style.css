@@ -405,6 +405,10 @@ header nav a{
         font-size: 0.8em; /* Smaller button on tablets */
         padding: 7px 14px;
     }
+    .detail .tryout2 {
+        font-size: 0.8em; /* Smaller button on tablets */
+        padding: 7px 14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -416,6 +420,10 @@ header nav a{
         margin-top: 10px;
     }
     .detail .checkout {
+        font-size: 0.6em; /* Smaller button on mobile */
+        padding: 4px 10px;
+    }
+    .detail .tryout2 {
         font-size: 0.6em; /* Smaller button on mobile */
         padding: 4px 10px;
     }
