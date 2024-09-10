@@ -328,6 +328,18 @@ header nav a{
     transition: background-color 0.3s, transform 0.2s;
 }
 
+.detail .tryout2 {
+    font-family: Poppins;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 7px 20px;
+    background-color: #ffcb05; /* Gold color to match theme */
+    border-radius: 6px;
+    border-color: #ffcb05;
+    color: #000;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
 
 .detail .checkout:hover {
 	cursor: pointer;
@@ -351,12 +363,27 @@ header nav a{
 	background: transparent;
 }
 
+.detail .tryout2:hover {
+    cursor: pointer;
+    color: #ffcb05;
+    background-color: #e0b004; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+
+/*    cursor: pointer;
+    color: #ffcb05;*/
+    background: transparent;
+}
+
 .detail .checkout:focus {
     outline: none; /* Remove the default focus outline */
     box-shadow: 0 0 8px rgba(255,203,5,0.6); /* Glow effect on focus */
 }
 
 .detail .tryout:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 8px rgba(255,203,5,0.6); /* Glow effect on focus */
+}
+.detail .tryout2:focus {
     outline: none; /* Remove the default focus outline */
     box-shadow: 0 0 8px rgba(255,203,5,0.6); /* Glow effect on focus */
 }
