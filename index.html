@@ -90,8 +90,7 @@
                             const currentlyDebugged =
                                 localStorage.getItem("my__background") === "fall25_debugged";
 
-                            const fall25ShouldShowDebugLabel =
-                                nextClickIsDebugged || currentlyDebugged;
+                            const fall25ShouldShowDebugLabel = nextClickIsDebugged;
 
                             document.querySelectorAll(".fall25 a").forEach(anchor => {
                                 anchor.textContent = fall25ShouldShowDebugLabel
