@@ -66,7 +66,7 @@
 							<li class = "spring25"><a href = "https://joseph-ma.com/">Spring 25</a></li><br>
                             <li class = "fall25"><a href = "https://joseph-ma.com/">Fall 25</a></li>
 						</ul>
-						<script>
+						<!-- <script>
 							//MEMORY SELECTOR
 							const my_memories = ["fall22", "spring23", "fall23", "spring24", "fall24", "spring25", "fall25"]
 							const memory_list = new Array(my_memories.length)
@@ -80,7 +80,58 @@
 								  });
 								});
 							}
-						</script>
+						</script> -->
+                        <script>
+
+                            function updateFall25Label() {
+                            const nextClickIsDebugged =
+                                localStorage.getItem("fall25_next_debugged") === "1";
+
+                            const currentlyDebugged =
+                                localStorage.getItem("my__background") === "fall25_debugged";
+
+                            const fall25ShouldShowDebugLabel =
+                                nextClickIsDebugged || currentlyDebugged;
+
+                            document.querySelectorAll(".fall25 a").forEach(anchor => {
+                                anchor.textContent = fall25ShouldShowDebugLabel
+                                ? "Fall 25 🐛🔍"
+                                : "Fall 25";
+                            });
+                            }
+
+                            // MEMORIES SELECTOR
+                            updateFall25Label();
+                            const my_memories = ["fall22", "spring23", "fall23", "spring24", "fall24", "spring25", "fall25"];
+                            const memory_list = new Array(my_memories.length);
+
+                            for (let i = 0; i < my_memories.length; i++) {
+                            memory_list[i] = document.querySelectorAll("." + my_memories[i]);
+
+                            memory_list[i].forEach(element => {
+                                element.addEventListener("click", () => {
+                                // Special alternating behavior ONLY for fall25
+                                if (my_memories[i] === "fall25") {
+                                    const nextIsDebugged = localStorage.getItem("fall25_next_debugged") === "1";
+                                    if (nextIsDebugged) {
+                                    localStorage.setItem("my__background", "fall25_debugged");
+                                    localStorage.setItem("fall25_next_debugged", "0"); // next time -> regular
+                                    } else {
+                                    localStorage.setItem("my__background", "fall25");
+                                    localStorage.setItem("fall25_next_debugged", "1"); // next time -> debugged
+                                    }
+                                } else {
+                                    // All other memories behave normally
+                                    localStorage.setItem("my__background", my_memories[i]);
+                                }
+
+                                // keep your existing behavior
+                                localStorage.setItem("is__theme", 0);
+                                updateFall25Label();
+                                });
+                            });
+                            }
+                        </script>
 					</div>
 				</li>
 			</ul>
