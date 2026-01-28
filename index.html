@@ -40,10 +40,13 @@
 					<li class = "fall23"><a href = "https://joseph-ma.com/">Fall 23</a></li><br>
 					<li class = "spring24"><a href = "https://joseph-ma.com/">Spring 24</a></li><br>
 					<li class = "fall24"><a href = "https://joseph-ma.com/">Fall 24</a></li><br>
-					<li class = "spring25"><a href = "https://joseph-ma.com/">Spring 25</a></li>
+					<li class = "spring25"><a href = "https://joseph-ma.com/">Spring 25</a></li><br>
+                    <li class = "fall25"><a href = "https://joseph-ma.com/">Fall 25</a></li>
 				</ul>
 			</div>
-			<div class = "logo"><a href="https://joseph-ma.com/">Joseph's <span>Portfolio</a></div>
+			<div class = "logo">
+                <a href="https://joseph-ma.com/">Joseph's <span>Portfolio</a>
+            </div>
 
 			<ul class = "menu">
 				<li class = "original_button"><a href="#">Home</a></li>
@@ -60,11 +63,12 @@
 							<li class = "fall23"><a href = "https://joseph-ma.com/">Fall 23</a></li><br>
 							<li class = "spring24"><a href = "https://joseph-ma.com/">Spring 24</a></li><br>
 							<li class = "fall24"><a href = "https://joseph-ma.com/">Fall 24</a></li><br>
-							<li class = "spring25"><a href = "https://joseph-ma.com/">Spring 25</a></li>
+							<li class = "spring25"><a href = "https://joseph-ma.com/">Spring 25</a></li><br>
+                            <li class = "fall25"><a href = "https://joseph-ma.com/">Fall 25</a></li>
 						</ul>
 						<script>
 							//MEMORY SELECTOR
-							const my_memories = ["fall22", "spring23", "fall23", "spring24", "fall24", "spring25"]
+							const my_memories = ["fall22", "spring23", "fall23", "spring24", "fall24", "spring25", "fall25"]
 							const memory_list = new Array(my_memories.length)
 
 							for(let i = 0; i < my_memories.length; i++) {
@@ -173,7 +177,8 @@
 				<div class = "text-1">Hello World. My name is </div>
 				<div class = "text-2">Joseph Ma</div>
 				<div class = "text-3">And I'm <span class = "typing"></span></div>
-				<a href="joseph_ma_2025_resume.pdf" download= "" target = "_blank">Résumé</a>
+				<!-- <a href="joseph_ma_2025_resume.pdf" download= "" target = "_blank">Résumé</a> -->
+                <a href="#" id="resume-link">Résumé</a>
 			</div>
 		</div>
 	</section>
@@ -190,9 +195,9 @@
 				</div>
 				<div class = "column right">
 					<div class = "text">Hello there. I'm Joseph!</div>
-					<p>I am currently pursuing my master's degree in Electrical and Computer Engineering at <b><a href = "https://engineering.purdue.edu/ECE" target = "_blank">Purdue University ECE</a></b>. While my core focus is embedded systems and firmware, I often work across the stack, whether that means stepping into software development and networking or digging into circuit design and hardware-level debugging.
+					<p>I am currently an Embedded Firmware Engineer at <b><a href = "https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center" target = "_blank">Amazon Robotics</a></b>.
+                    While my core focus is embedded systems and firmware, I often work across the stack, whether that means stepping into software development and networking or digging into circuit design and hardware-level debugging.
 
-					<br><br>Most recently, I was at <b><a href = "https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center" target = "_blank">Amazon Robotics</a></b> as an Embedded Firmware Engineering Co-op working on <b><a href = "https://youtu.be/AmmEbYkYfHY?si=UIpQYCdozEFvU2-P" target = "_blank">Proteus</a></b>, their first autonomous robot. Before that, I interned with the <b><a href = "https://thewaltdisneycompany.com/" target = "_blank">Walt Disney Company</a></b> as an Attractions Engineer, where I worked on IoT and embedded systems for live deployment on one of their rides. At Purdue, I also serve as a Graduate Teaching Assistant for <b><a href = "https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/UGO/CourseInfo/courseInfo?courseid=612&show=true&type=undergrad" target = "_blank">ECE 362: Microprocessor Systems and Interfacing</a></b>, where I guide students through labs using ARM-based microcontrollers and embedded C.
 					<br><br>
 					As for my personal projects, many of them branch beyond embedded systems into areas like machine learning which is a topic I've been diving deeper into. Want to see more? Check out the <b><a href="#projects">Projects</a></b> section for detailed writeups, interactive demos, and a showcase of 13+ completed projects, with more on the way.
 					<br><br>Beyond tech, I find joy in activities such as biking, swimming, watching movies, and occasionally expressing my creativity through digital art + UI/UX design. Feel free to visit the <b>Memories</b> section, where you can discover more about what I've been up to and even set a new homepage background.</p>
@@ -205,7 +210,7 @@
 						</a>
 						<a href = "https://github.com/ma562" target = "_blank">
 							<div class = "icons">
-								</i><i class="fa-brands fa-github"></i>
+								<i class="fa-brands fa-github"></i>
 							</div>
 						</a>
 						<a href = "mailto:ma562@purdue.edu">
@@ -222,13 +227,27 @@
  	<section class="mytimeline" id="mytimeline">
     <div class="timeline">
     	<h2 class="title">Experience</h2>
+        <div class="container left-container">
+            <div class="text-box">
+                <a href="https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center" target="_blank"><h2>Amazon Robotics</h2></a>
+                <h3>Embedded Firmware Engineer</h3>
+                <small>February 2026 - Present</small>
+                <p class = "mytext">
+                Full-time Engineer working on Proteus.
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
+            <div class="image-container">
+                <img src="images/AR.png" alt="Placeholder Image">
+            </div>
+        </div>
     	<div class="container right-container">
             <div class="text-box">
                 <a href="https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center" target="_blank"><h2>Amazon Robotics</h2></a>
                 <h3>Embedded Firmware Engineering Co-op</h3>
                 <small>January 2025 - July 2025</small>
                 <p class = "mytext">
-                I joined the Mobile Robotics Safety Firmware (MoRSaf) Team working on Amazon's first autonomous robot, <b><a href = "https://youtu.be/AmmEbYkYfHY?si=UIpQYCdozEFvU2-P" target = "_blank">Proteus</a></b>. My work centered around developing embedded firmware in a real-time operating system (RTOS) environment and managing communication and data transfer between the RTOS and Linux-based systems on a multi-core SoC. This included developing Linux user space applications to initialize cross-core communication, and using JTAG to debug and validate firmware behavior on the RTOS core during bring-up and testing. In addition to firmware development, I built a Python-based gRPC client and CLI to help engineers quickly access diagnostics and health data, cutting on-call query times by 20×. I also added socket fallback for reliability and built in SSH tunneling to support remote querying.
+                I joined the Mobile Robsotics Safety Firmware (MoRSaf) Team working on Amazon's first autonomous robot, <b><a href = "https://youtu.be/AmmEbYkYfHY?si=UIpQYCdozEFvU2-P" target = "_blank">Proteus</a></b>. My work centered around developing embedded firmware in a real-time operating system (RTOS) environment and managing communication and data transfer between the RTOS and Linux-based systems on a multi-core SoC. This included developing Linux user space applications to initialize cross-core communication, and using JTAG to debug and validate firmware behavior on the RTOS core during bring-up and testing. In addition to firmware development, I built a Python-based gRPC client and CLI to help engineers quickly access diagnostics and health data, cutting on-call query times by 20×. I also added socket fallback for reliability and built in SSH tunneling to support remote querying.
                 </p>
                 
                 <span class="left-container-arrow"></span>
@@ -676,7 +695,7 @@
 	</section>
 
 	<div class = "info" id = "info">
-		<div class = "text">Copyright © 2022 - 2025 Designed & Built by Joseph Ma</div>
+		<div class = "text">Copyright © 2022 - 2026 Designed & Built by Joseph Ma</div>
 	</div>
 
 	<script src="javascript/particles.js"></script>
@@ -684,6 +703,19 @@
 	<script src ="javascript/script.js"></script>
 	<script src = "javascript/background_picker.js"></script>
 	<script src = "javascript/project.js"></script>
+    <script>
+        const resumeLink = document.getElementById("resume-link");
+
+        if (resumeLink) {
+          resumeLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            alert(
+              "Résumé available upon request.\n\n" +
+              "Please connect with me on LinkedIn or email me for my most up-to-date résumé.\n\n"
+            );
+          });
+        }
+      </script>
 </body>
 
 </html>
